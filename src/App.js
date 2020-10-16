@@ -12,7 +12,7 @@ export default function App() {
         const timer = setTimeout(() => setCount(count + 1), 1000)
         return () => clearTimeout(timer)
     }, [count, setCount])
-    // Return the App component.
+    // Return the App component. Test123
     return (
         <div className='App'>
             <header className='App-header'>
