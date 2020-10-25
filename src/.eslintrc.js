@@ -19,10 +19,13 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
-        'preact',
         'plugin:react/recommended',
-        // "plugin:prettier/recommended"
     ],
+    settings: {
+        react: {
+            'version': 'detect',
+        },
+    },
     parser: 'babel-eslint',
     parserOptions: {
         ecmaFeatures: {

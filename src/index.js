@@ -1,13 +1,17 @@
-import { h, render } from 'preact'
-import './index.css'
 
-import App from './App.js'
-// import X from './IntroButtonFancyShit'
+import './globalStyle.css'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-render(
+import Layout from './Layout.js'
+
+ReactDOM.render(
     <div>
-        {/* <X testAttribute={'test213'} /> */}
-        <App />
-
+        <Layout />
     </div>,
     document.getElementById('root'))
+
+
+if (import.meta.hot) {
+    import.meta.hot.accept()
+}

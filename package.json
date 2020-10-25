@@ -4,18 +4,20 @@
         "build": "snowpack build"
     },
     "dependencies": {
-        "eslint-config-standard-jsx": "^8.1.0",
-        "preact": "^10.5.4"
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-router-dom": "^5.2.0"
     },
     "devDependencies": {
         "@babel/plugin-transform-react-jsx": "^7.10.4",
         "@babel/preset-react": "^7.10.4",
-        "@prefresh/snowpack": "^2.1.0",
-        "@snowpack/app-scripts-react": "^1.12.3",
+        "@snowpack/plugin-babel": "^2.1.4",
         "@snowpack/plugin-dotenv": "^2.0.3",
+        "@snowpack/plugin-react-refresh": "^2.3.4",
         "babel-eslint": "^10.1.0",
         "eslint": "^7.10.0",
         "eslint-config-preact": "^1.1.1",
+        "eslint-config-standard-jsx": "^8.1.0",
         "eslint-plugin-react-hooks": "^4.1.2",
         "snowpack": "^2.14.0"
     }

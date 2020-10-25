@@ -5,7 +5,7 @@ module.exports = {
     },
     plugins: [
         "@snowpack/plugin-babel",
-        '@prefresh/snowpack',
+        '@snowpack/plugin-react-refresh',
         '@snowpack/plugin-dotenv',
     ],
 };

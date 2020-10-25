@@ -1,0 +1,25 @@
+.headerDiv {
+    /*DEBUG*/
+    border: 1px solid lightgray;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: white;
+    transition: 0.2s;
+
+    max-height: 80px;/*SYNC WITH FUNCTION ON Header.js*/
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerDiv>a {
+    margin: 0 25px;
+}
+
+.registerIcon > img{
+    width: auto;
+    height: 80px;
+}
