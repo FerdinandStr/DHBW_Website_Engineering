@@ -6,7 +6,7 @@ import './Footer.css'
 export default function Footer() {
 
     return <footer id='footer' className='footerDiv'>
-        <div className='footerHead'><span>Appname</span></div>
+        <div className='footerHead'><span>COGO</span></div>
         <div className='container'>
             <div className='FooterRowElement'>
                 <div className='Textdata' >Für aktuelle Informationen:</div>

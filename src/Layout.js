@@ -17,14 +17,15 @@ export default function App() {
         <Router>
 
             <Header />
-
-            <div className='mainContentDiv'>
-                <Switch>
-                    <Route path='/consumer'><ConsumerPage /></Route>
-                    <Route path='/business'><BusinessPage /></Route>
-                    <Route path='/Kontakt' ><Kontakt /></Route>
-                    <Route path='/Impressum' ><Impressum /></Route>
-                </Switch >
+            <div className='Backgroundwrap'>
+                <div className='mainContentDiv'>
+                    <Switch>
+                        <Route path='/consumer'><ConsumerPage /></Route>
+                        <Route path='/business'><BusinessPage /></Route>
+                        <Route path='/Kontakt' ><Kontakt /></Route>
+                        <Route path='/Impressum' ><Impressum /></Route>
+                    </Switch >
+                </div>
             </div>
 
             < Footer />

@@ -1,15 +1,12 @@
 .footerDiv {
     /*DEBUG*/
-    border: 1px solid lightgray;
+   
     bottom: 0;
     width: 100%;
     height: 20%;
-    background-color: #383535;
+    background-color:#333;
     color: white;
-    transition: 0.2s;
-
-    /*max-height: 400px;/*SYNC WITH FUNCTION ON Header.js*/
-    
+    transition: 0.2s;  
     position: absolut;
     justify-content: center;
     align-items: center;
@@ -34,7 +31,7 @@
     padding: 0 10px;
     display: inline-block;
     margin-top: 10px;
-    background: #383535;
+    background:  #333;
 }
 
 .bottomFooterBar{
@@ -48,13 +45,13 @@
 }
 
 .footerDiv a{
-    color: #ffcc02; 
+    color:#DAA520; 
     padding-top: 10px;
     text-decoration-line: none;
 }
 
 a:hover{
-    color: #ff9900;
+    color: #DAA520;
 }
 
 .registerIcon img{

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './Header.css'
 
 export default function Header() {
-
+    /*
     window.onscroll = function () { scrollFunction() }
 
     function scrollFunction() {
@@ -20,7 +20,7 @@ export default function Header() {
             document.getElementById('link3').style.padding = '30px'
             document.getElementById('link4').style.padding = '30px'
         }
-    }
+    }*/
 
 
 

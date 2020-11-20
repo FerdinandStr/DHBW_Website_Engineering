@@ -1,10 +1,9 @@
 .headerDiv {
     /*DEBUG*/
-    border: 1px solid lightgray;
     position: fixed; 
     top: 0;
     width: 100%;
-    background-color: #383535;
+    background-color: #333;
     transition: 0.2s;
 
     max-height: 80px;/*SYNC WITH FUNCTION ON Header.js*/
@@ -38,11 +37,11 @@ ul {
   li a {
     display: block;
     padding: 30px;
-    background-color: #383535;
-    color: white;
+    background-color: #333;
+    color: #DAA520;
     text-decoration-line: none;
   }
 
  li a:hover {
-  background-color: #111;
+  background-color: #333;
 }
