@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import BusinessPage from './Sites/BusinessPage'
 import Kontakt from './Sites/Kontakt'
 import Impressum from './Sites/Impressum'
+import FAQ from './Sites/FAQ'
 
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
                         <Route path='/business'><BusinessPage /></Route>
                         <Route path='/Kontakt' ><Kontakt /></Route>
                         <Route path='/Impressum' ><Impressum /></Route>
+                        <Route path='/FAQ' ><FAQ /></Route>
                     </Switch >
                 </div>
             </div>
