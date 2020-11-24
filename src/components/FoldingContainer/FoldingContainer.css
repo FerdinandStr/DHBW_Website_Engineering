@@ -1,0 +1,91 @@
+.FoldingContainer {
+  overflow: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.InnerFoldingContainer {
+  max-height: none;
+}
+
+#ClosedContainer {
+  max-height: 35px !important;
+  cursor: pointer;
+}
+
+#ClosedPanelContainer {
+  max-height: 20px !important;
+  cursor: pointer;
+}
+
+/*.FoldingContainer:hover{
+    max-height: 500px !important;
+}*/
+
+.ContainerHeader {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+/* CONTENT MOVEMENT */
+
+.ContainerContent {
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.HeadlineDiv {
+  background-color: white;
+}
+
+/* ICON */
+.FoldingIconDiv {
+  grid-column: 2;
+  grid-row: 1;
+  width: 20px;
+  height: 20px;
+  margin: auto 10px auto auto;
+}
+
+.InnerFoldingIconDiv {
+  margin-right: 15px;
+}
+
+.FoldingIcon {
+    border: 5px solid red;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: right;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.InnerFoldingIcon {
+  font-size: 10px;
+}
+
+:global(#ContainerIconOpen) {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.FoldingSearchAreaCard {
+  margin: 20px;
+  box-shadow: rgba(60, 64, 67, 0.08) 0px 1px 1px 0px, rgba(60, 64, 67, 0.16) 0px 1px 3px 1px;
+  border-radius: 3px;
+  padding: 20px;
+  background-color: white;
+}

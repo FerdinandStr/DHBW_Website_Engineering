@@ -7,6 +7,9 @@ module.exports = {
         "@snowpack/plugin-babel",
         '@snowpack/plugin-react-refresh',
         '@snowpack/plugin-dotenv',
+        // '@snowpack/plugin-webpack',
+        // "@snowpack/plugin-optimize"
+
     ],
 };
 

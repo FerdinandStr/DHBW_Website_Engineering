@@ -1,12 +1,120 @@
+.page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    width: 100%;
+    min-height: 300px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .imageArea{
+      order: 2;
+    width: 100%;
+    /* background-color: #fff; */
+  }
+  .textArea{
+      order:1;
+    width: 100%;
+    /* background-color: #000; */
+  }
+  
+  .menu {
+    background-color: #5995DA;
+    height: 80px;
+  }
+  
+  .header {
+    background-color: #B2D6FF;
+    background-image: url('./headerWoodBanner.jpg');
+  }
+  
+  .content {
+    background-color: #EAEDF0;
+    height: 600px;
+  }
+  
+  .feature1 {
+    background-color: #F5CF8E;
+  }
+  
+  .feature2 {
+    background-color: #F09A9D;
+  }
+  
+  .feature3 {
+    background-color: #C8C6FA;
+  }
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: #F09A9D; /* Red */
+    }
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    .feature1,
+    .feature2,
+    .feature3 {
+      width: 50%;
+    }
+    body {
+        background-color: #F5CF8E; /* Yellow */
+      }
+  }
+  
+  /* Desktop Styles */
+  /* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .page {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .textArea{
+        order: 2;
+        width: 50%;
+    }
+    .imageArea{
+        order: 1;
+        width: 50%;
+    }
+    
+    .header {
+      min-height: 400px;
+      /* background-image: url('./headerWoodBanner.jpg'); */
+    }
+
+    .textHead{
+        width: 480px;
+    }
+
+  }
+
+
+
+
+
+
+
+
 .containerBody{
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    background-color: rgb(240, 235, 235);
+    /* background-color: rgb(240, 235, 235); */
     /*background-image: url('./slate-4772749_1920.jpg');'*/
     background-repeat: repeat-y;
-    padding-top: 3%;
-    padding-bottom: 3%;
 }
 
 .containerRow1{
@@ -14,10 +122,7 @@
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    margin-top: 5%;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    background-image: url('./dark-wooden-texture-surface.jpg');
+    background-image: url('./headerWoodBanner.jpg');
 }
 
 .containerRow{
@@ -25,26 +130,21 @@
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    margin-top: 5%;
-    padding-bottom: 5%;
-    padding-top: 5%;
 }
 
 .containerElement{
     display: flex;
     width: 50%;
     margin: 0%;
-    text-align: center;
     margin: 1%;
-    align-content: center;
 }
 
-.testImgOvv{
+.headerImg{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    transform: rotate(355deg);
+    padding: 50px 25px;
+    width: 100%;
+    /* max-width: 350px; */
+    transform: rotate(-3deg);
 }
 
 .testImg{
@@ -56,13 +156,41 @@
 }
 
 .textHead{
-    margin: 6%;
+    color:white;
     text-align: center;
-    color: rgb(209, 200, 200);
+    /* display: inline-block; */
+
 }
 
 .text{
-    margin: 6%;
     text-align: center;
-    color: rgb(58, 53, 53);
+    color: #333;
+}
+
+.fixedBgScrollImage{
+    border-radius: 5px;
+    height: 200px;
+    width: 100%;
+    /* background-image: url(/restaurant-691397_1920-min.jpg); */
+    background-position: bottom center; 
+	background-repeat: no-repeat; 
+	background-size:cover; 
+	background-attachment:fixed;
+}
+
+.goldArrow{
+    color: #DAA520;
+    font-size: 4rem;
+}
+
+h1{
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+.alignLeft{
+    text-align: start;
+}
+.alignRight{
+    text-align: end;
 }
