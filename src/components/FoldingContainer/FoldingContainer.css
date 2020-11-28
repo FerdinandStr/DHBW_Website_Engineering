@@ -5,9 +5,16 @@
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 
-  max-height: 500px;
-  display: flex;
+  box-sizing: border-box;
+  border-radius: 8px 8px;
+  
+  max-height: 200px;
+  width: 100%;
+  display: auto;
   flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: lightgray;
 }
 
 .InnerFoldingContainer {
@@ -15,12 +22,14 @@
 }
 
 #ClosedContainer {
-  max-height: 35px !important;
+  /*max-height: 35px !important;*/
+  display: flex;
   cursor: pointer;
 }
 
 #ClosedPanelContainer {
-  max-height: 20px !important;
+  /*max-height: 20px !important;*/
+  display: flex;
   cursor: pointer;
 }
 
@@ -42,8 +51,9 @@
   transition: 0.5s ease-in-out;
 }
 
-.HeadlineDiv {
-  background-color: white;
+.HeadlineDiv.h2 {
+  /*background-color: white;*/
+  display: flex;
 }
 
 /* ICON */
@@ -60,7 +70,6 @@
 }
 
 .FoldingIcon {
-    border: 5px solid red;
   font-size: 20px;
   cursor: pointer;
   text-align: right;

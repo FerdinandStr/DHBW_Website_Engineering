@@ -15,7 +15,7 @@ import CoGoMockup from './Sites/app/CoGoMockup'
 export default function App() {
 
     const history = useHistory()
-    const [isLoggedIn, setIsLoggedIn] = useState(false)
+    const [isLoggedIn, setIsLoggedIn] = useState(true)
 
     useEffect(() => {
         //get cookie

@@ -19,7 +19,7 @@ export default function LoginMask() {
             if (e.key == 'Enter') {
                 login()
             }
-        }} ></input>
+        }}></input>
         <button
             className='LoginButton'
             onClick={login}>

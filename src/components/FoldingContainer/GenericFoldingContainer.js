@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { AiOutlineCaretDown } from 'react-icons/ai'
 import './FoldingContainer.css'
 
 
@@ -19,7 +20,7 @@ import './FoldingContainer.css'
 //##################################################################################################################################################//
 export function useFoldingContainerState(initialState) {
 
-    const [isOpen, setIsOpen] = useState(initialState === false ? false : true)
+    const [isOpen, setIsOpen] = useState(initialState === true ? false : true)
 
     function changeOpen(value) {
         value === true || value === false
@@ -50,11 +51,12 @@ export default function GenericFoldingContainer(props) {
         <div className='FoldingContainer' style={{ maxHeight: maxHeight }} id={internalIsOpen ? '' : 'ClosedContainer'} onClick={internalIsOpen ? null : () => changeOpenState()}>
             <div className='ContainerHeader'>
                 <div className='HeadlineDiv'>{headlineComponent}</div>
-                <div className='FoldingIconDiv'><button className='FoldingIcon' id={internalIsOpen ? 'ContainerIconOpen' : ''} onClick={!internalIsOpen ? null : () => changeOpenState()} >REIN!</button></div>
+                <div className='FoldingIconDiv'><button className='FoldingIcon' id={internalIsOpen ? 'ContainerIconOpen' : './double-arrow-bottom.svg'} onClick={!internalIsOpen ? null : () => changeOpenState()} ></button></div>
+                <div className='FoldingIconDiv'><AiOutlineCaretDown className='ArrowIcon' id={internalIsOpen ? 'ContainerIconOpen' : ''} onClick={!internalIsOpen ? null : () => changeOpenState()} /></div>
             </div>
             <div className='ContainerContent'>
                 {children}
             </div>
-        </div>
+        </div >
     )
 }
