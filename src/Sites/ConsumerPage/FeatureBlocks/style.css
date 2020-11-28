@@ -1,0 +1,58 @@
+.featureBlockContainer {
+    position: relative;
+}
+
+.bgImg {
+    width: 100%;
+}
+
+.blockText h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.blockText p {
+    line-height: 1.3em;
+    font-size: 1.3em;
+}
+
+/* +++++++++ FIRST BLOCK +++++++++ */
+.QrCogoDiv {
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    width: 25%;
+}
+
+.QrCogoDiv img {
+    width: 100%;
+}
+
+.qrBlockDescription {
+    position: absolute;
+    top: 8%;
+    right: 15%;
+
+    width: 30%;
+}
+
+/* +++++++++ SECOND BLOCK +++++++++ */
+
+.phoneBlockDescription {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 40%;
+}
+
+.PhoneDiv {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 21%;
+}
+
+.PhoneDiv img {
+    width: 100%;
+    transform: rotate(0deg);
+}

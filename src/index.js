@@ -2,7 +2,7 @@
 import './globalStyle.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import Layout from './Layout.js'
 import LoginMask from './Sites/Login'
 

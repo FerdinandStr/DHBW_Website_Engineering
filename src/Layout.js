@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { Route, BrowserRouter as Router, Switch, useHistory, Redirect } from 'react-router-dom'
-import './Layout.css'
+import { Route, Switch, useHistory, Redirect } from 'react-router-dom'
 
 import Header from './components/Header'
-import ConsumerPage from './Sites/ConsumerPage'
+import ConsumerPage from './Sites/ConsumerPage/ConsumerPage'
 import Footer from './components/Footer'
 import BusinessPage from './Sites/BusinessPage'
 import Kontakt from './Sites/Kontakt'

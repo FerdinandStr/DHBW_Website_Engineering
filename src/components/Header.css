@@ -1,14 +1,12 @@
 .headerDiv {
     /*DEBUG*/
-    position: fixed; 
+    position: absolute;
     top: 0;
     width: 100%;
-    background-color: #333;
-    transition: 0.2s;
+    /* transition: 0.2s; */
 
-    max-height: 80px;/*SYNC WITH FUNCTION ON Header.js*/
-    
-    
+    /* max-height: 80px; */
+    /*SYNC WITH FUNCTION ON Header.js*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,30 +16,44 @@
     margin: 0 25px;
 }
 
-.registerIcon > img{
+.registerIcon>img {
     width: auto;
     height: 80px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    padding: 30px;
-    background-color: #333;
-    color: #DAA520;
-    text-decoration-line: none;
-  }
 
- li a:hover {
-  background-color: #333;
+.headerMenu {
+    display: flex;
+    list-style-type: none;
+}
+
+.headerLinkText {
+    transition: all .15s;
+    padding: 30px;
+    font-size: 1.5em;
+    z-index: 10;
+}
+
+.headerLinkText a {
+    display: block;
+    color: #FFF;
+    text-decoration-line: none;
+    transition: all .15s ease-in-out;
+}
+
+.headerLinkText a:hover {
+    transform: scale(1.15);
+    color: #DAA520;
+}
+
+
+.fixedBgScrollImage {
+    border-radius: 5px;
+    height: 200px;
+    width: 100%;
+    background-image: url(/restaurant-691397_1920-min.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }

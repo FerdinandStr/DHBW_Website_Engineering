@@ -25,12 +25,12 @@ export default function Header() {
 
 
     return <header id='header' className='headerDiv'>
-        <div className='registerIcon'><img src='./noun_register_1753825.svg'></img></div>
-        <ul>
-            <li id='link1'><Link to='/consumer' >Consumer Link</Link></li>
-            <li id='link2'><Link to='/business' >Business Link </Link></li>
-            <li id='link3'><Link to='/FAQ' >FAQ </Link></li>
-            <li id='link4'><Link to='/Kontakt' >Kontakt</Link></li>
-        </ul>
+        {/* <div className='registerIcon'><img src='./noun_register_1753825.svg'></img></div> */}
+        <menu className='headerMenu'>
+            <li className='headerLinkText' id='link1'><Link to='/consumer' >Home</Link></li>
+            <li className='headerLinkText' id='link2'><Link to='/business' >Business</Link></li>
+            <li className='headerLinkText' id='link3'><Link to='/FAQ' >FAQ </Link></li>
+            <li className='headerLinkText' id='link4'><Link to='/Kontakt' >Kontakt</Link></li>
+        </menu>
     </header >
 }

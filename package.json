@@ -6,8 +6,11 @@
     "dependencies": {
         "@snowpack/plugin-optimize": "^0.2.9",
         "@snowpack/plugin-webpack": "^2.1.1",
+        "animate.css": "^4.1.1",
         "react": "^17.0.1",
+        "react-animate-on-scroll": "^2.1.5",
         "react-dom": "^17.0.1",
+        "react-icons": "^3.11.0",
         "react-router-dom": "^5.2.0"
     },
     "devDependencies": {

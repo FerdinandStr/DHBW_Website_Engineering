@@ -1,0 +1,67 @@
+.header {
+    padding-top: 100px;
+    background-image: url('./BackgroundHeader.webp');
+
+    /* background-position: bottom center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-attachment: fixed;
+
+    height: 100vh;
+
+    box-shadow: inset 0px -31px 50px 5px rgba(0, 0, 0, 0.75);
+
+}
+
+
+
+.textHead1 {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.35);
+    /* opacity: 0; */
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+
+.textHead2 {
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+
+.imageArea {
+    order: 2;
+    display: flex;
+}
+
+.headerImageLeft {
+    /* display: block; */
+    padding: 50px 25px;
+    width: 100%;
+    height: 500px;
+    /* max-width: 350px; */
+    /* transform: rotate(-3deg); */
+}
+
+.flipOut {
+    /* opacity: 0; */
+    animation: fadeOut;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.flipIn {
+    /* animation-fill-mode: forwards; */
+    animation: fadeIn;
+    /* animation-delay: 0.5s; */
+    animation-duration: 1s;
+}
+
+
+
+
+
+.headerOldText {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

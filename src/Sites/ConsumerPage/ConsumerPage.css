@@ -1,0 +1,118 @@
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #888; */
+}
+
+.section {
+    width: 100%;
+    min-height: 500px;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* ############### HEADER AREA ############### */
+
+.textArea {
+    order: 1;
+    width: 100%;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 400px) {
+    body {
+        /* background-color: #F09A9D; */
+        /* Red */
+    }
+}
+
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+    .feature1,
+    .feature2,
+    .feature3 {
+        width: 50%;
+    }
+
+    body {
+        background-color: #F5CF8E;
+        /* Yellow */
+    }
+}
+
+
+/* Desktop Styles */
+/* reoder for desktop*/
+@media only screen and (min-width: 961px) {
+    .page {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .textArea {
+        order: 2;
+        width: 50%;
+    }
+
+    .imageArea {
+        width: 50%;
+    }
+
+    /* reorder featureBLocks for Desktop left/right */
+    .feature1 .textArea,
+    .feature3 .textArea {
+        order: 1;
+    }
+
+    .header {
+        min-height: 400px;
+        /* background-image: url('./headerWoodBanner.jpg'); */
+    }
+
+    .textHead {
+        /* width: 480px; */
+    }
+}
+
+.testImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 100px;
+}
+
+.goldArrow {
+    color: #DAA520;
+    font-size: 4rem;
+}
+
+.goldArrowSmall {
+    color: #DAA520;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+.alignLeft {
+    text-align: start;
+}
+
+.alignRight {
+    text-align: end;
+}

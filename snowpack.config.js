@@ -8,7 +8,7 @@ module.exports = {
         '@snowpack/plugin-react-refresh',
         '@snowpack/plugin-dotenv',
         // '@snowpack/plugin-webpack',
-        // "@snowpack/plugin-optimize"
+        "@snowpack/plugin-optimize"
 
     ],
 };
