@@ -6,7 +6,7 @@ export default function FAQ() {
 
 
 
-    return <div className='page'>
+    return <div className='faqPage'>
         <h2>Häufig gestellte Fragen</h2>
         <GenericFoldingContainer headlineComponent={<h2>Warum werden diese Daten erhoben?</h2>}>
             <div className='content'>

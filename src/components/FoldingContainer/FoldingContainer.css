@@ -1,100 +1,77 @@
 .FoldingContainer {
-  overflow: hidden;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+    overflow: hidden;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 
-  box-sizing: border-box;
-  border-radius: 8px 8px;
-  
-  max-height: 200px;
-  width: 100%;
-  display: auto;
-  flex-direction: column;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: lightgray;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    max-height: 500px;
+    width: 100%;
+    display: auto;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: lightgray;
 }
 
-.InnerFoldingContainer {
-  max-height: none;
-}
 
 #ClosedContainer {
-  /*max-height: 35px !important;*/
-  display: flex;
-  cursor: pointer;
+    display: flex;
+    cursor: pointer;
 }
 
 #ClosedPanelContainer {
-  /*max-height: 20px !important;*/
-  display: flex;
-  cursor: pointer;
+    display: flex;
+    cursor: pointer;
 }
 
-/*.FoldingContainer:hover{
-    max-height: 500px !important;
-}*/
 
 .ContainerHeader {
-  display: flex;
-  margin-bottom: 8px;
+    display: flex;
+    margin-bottom: 8px;
 }
 
 /* CONTENT MOVEMENT */
 
 .ContainerContent {
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+
+    max-height: 500px;
 }
 
-.HeadlineDiv.h2 {
-  /*background-color: white;*/
-  display: flex;
+#ClosedContent {
+    max-height: 0px;
 }
 
 /* ICON */
 .FoldingIconDiv {
-  grid-column: 2;
-  grid-row: 1;
-  width: 20px;
-  height: 20px;
-  margin: auto 10px auto auto;
-}
-
-.InnerFoldingIconDiv {
-  margin-right: 15px;
+    grid-column: 2;
+    grid-row: 1;
+    width: 20px;
+    height: 20px;
+    margin: auto 10px auto auto;
 }
 
 .FoldingIcon {
-  font-size: 20px;
-  cursor: pointer;
-  text-align: right;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
-.InnerFoldingIcon {
-  font-size: 10px;
-}
-
-:global(#ContainerIconOpen) {
-  -webkit-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  -ms-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-}
-
-.FoldingSearchAreaCard {
-  margin: 20px;
-  box-shadow: rgba(60, 64, 67, 0.08) 0px 1px 1px 0px, rgba(60, 64, 67, 0.16) 0px 1px 3px 1px;
-  border-radius: 3px;
-  padding: 20px;
-  background-color: white;
+#ContainerIconOpen {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
 }

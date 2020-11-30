@@ -35,5 +35,16 @@ export default function FeatureBlocks() {
             </div>
         </div>
 
+
+        <div className='featureBlockContainer'>
+            {/* <img src='WoodPlank.webp' className='bgImg' /> */}
+            {/* <ScrollAnimation animateIn='animate__fadeInRight' animateOnce={false}> */}
+            <div className='blockText woodPlankDescription'>
+                <h1>Genießen Sie ihren</h1>
+                <h1>Restaurantbesuch!</h1>
+                {/* <p>Auch in schwierigen Zeiten wie diesen sollten Sie sich vorallem über Ihre Lokale umgebung Freuen und diese Unterstützen :)</p> */}
+            </div>
+            {/* </ScrollAnimation > */}
+        </div>
     </div>
 }

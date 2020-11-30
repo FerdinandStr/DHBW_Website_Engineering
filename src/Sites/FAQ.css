@@ -1,14 +1,5 @@
-.FAQDiv {
-    /*DEBUG*/
-    bottom: 0;
-    width: 100%;
-    height: 20%;
-    background-color: #333;
-    color: white;
-    transition: 0.2s;
-    position: absolut;
-    justify-content: center;
-    align-items: center;
+.faqPage {
+    padding: 20px 50px;
 }
 
 label {

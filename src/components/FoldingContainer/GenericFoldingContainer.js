@@ -51,10 +51,9 @@ export default function GenericFoldingContainer(props) {
         <div className='FoldingContainer' style={{ maxHeight: maxHeight }} id={internalIsOpen ? '' : 'ClosedContainer'} onClick={internalIsOpen ? null : () => changeOpenState()}>
             <div className='ContainerHeader'>
                 <div className='HeadlineDiv'>{headlineComponent}</div>
-                <div className='FoldingIconDiv'><button className='FoldingIcon' id={internalIsOpen ? 'ContainerIconOpen' : './double-arrow-bottom.svg'} onClick={!internalIsOpen ? null : () => changeOpenState()} ></button></div>
-                <div className='FoldingIconDiv'><AiOutlineCaretDown className='ArrowIcon' id={internalIsOpen ? 'ContainerIconOpen' : ''} onClick={!internalIsOpen ? null : () => changeOpenState()} /></div>
+                <div className='FoldingIconDiv'><AiOutlineCaretDown className='FoldingIcon' id={internalIsOpen ? 'ContainerIconOpen' : ''} onClick={!internalIsOpen ? null : () => changeOpenState()} /></div>
             </div>
-            <div className='ContainerContent'>
+            <div className='ContainerContent' id={internalIsOpen ? '' : 'ClosedContent'}>
                 {children}
             </div>
         </div >
