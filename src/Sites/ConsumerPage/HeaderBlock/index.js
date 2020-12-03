@@ -8,18 +8,20 @@ export default function HeaderBlock() {
     useEffect(() => {
         const timer = setInterval(() => {
             setShowOld(value => !value)
-        }, 6000)
+        }, 3000)
         return () => clearInterval(timer)
     })
 
-    return <div className='section header'>
-        <div className='section textArea '>
+    return <div className='header'>
+        <div className='flexBoxCenterColumn headerTextBlock'>
             <div className={showOld ? 'textHead1 flipOut' : 'textHead1 flipIn'}>
-                <h1 className='headerOldText'>Die Corona Anwesenheitserfassung mit Papier?</h1>
+                <img className='contractIcon' src='./iconContract.webp' />
+                <h1 className='headerOldText'>Die Corona Anwesenheits&shy;erfassung mit Papier?</h1>
                 <h1 className='headerOldText'>Veraltet. Umständlich. Datenchaos.</h1>
             </div>
             <div className={showOld ? 'textHead2 flipIn' : 'textHead2 flipOut'}>
-                <p><h1>CoGo</h1></p>
+                <img className='CoGoHeaderLogo' src='./CogoLogo.svg' />
+                {/* <p><h1>CoGo</h1></p> */}
                 <p><h1>Modern. Simpel. Sicher.</h1></p>
                 <span><h1>Wir erleichtern die Datenerfassung</h1></span>
             </div>

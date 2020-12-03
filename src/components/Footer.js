@@ -21,21 +21,21 @@ export default function Footer() {
             <div className='FooterFlexChild'>
                 <div className='Textdata'>Download</div>
                 <div className='downloadLinkContainer'>
-                    <a href='https://play.google.com/'><img loading='lazy' src='./icons/GooglePlayStore.svg' /></a>
+                    <a href='https://play.google.com/'><img loading='lazy' src='./GooglePlayStore.svg' /></a>
                 </div>
                 <div className='downloadLinkContainer'>
-                    <a href='https://www.apple.com/de/ios/app-store/'><img loading='lazy' src='./icons/AppleAppStore.svg' /></a><br />
+                    <a href='https://www.apple.com/de/ios/app-store/'><img loading='lazy' src='./AppleAppStore.svg' /></a><br />
                 </div>
             </div>
             <div className='FooterFlexChild'>
                 <div className='Textdata'>Folgt uns:</div>
                 <div className='FooterSocialMediaCol'>
-                    <div className='registerIcon'><a href='https://twitter.com/'><img loading='lazy' src='./icons/twitter.svg' /></a></div>
-                    <div className='registerIcon'><a href='https://de-de.facebook.com/'><img loading='lazy' src='./icons/facebook.svg' /></a></div>
+                    <div className='registerIcon'><a href='https://twitter.com/'><img loading='lazy' src='./twitter.svg' /></a></div>
+                    <div className='registerIcon'><a href='https://de-de.facebook.com/'><img loading='lazy' src='./facebook.svg' /></a></div>
                 </div>
                 <div className='FooterSocialMediaCol'>
-                    <div className='registerIcon'><a href='https://www.instagram.com'><img loading='lazy' src='./icons/instagram.svg' /></a></div>
-                    <div className='registerIcon'><a href='https://de.linkedin.com/'><img loading='lazy' src='./icons/linkedIn.svg' /></a></div>
+                    <div className='registerIcon'><a href='https://www.instagram.com'><img loading='lazy' src='./instagram.svg' /></a></div>
+                    <div className='registerIcon'><a href='https://de.linkedin.com/'><img loading='lazy' src='./linkedIn.svg' /></a></div>
                 </div>
             </div>
         </div>

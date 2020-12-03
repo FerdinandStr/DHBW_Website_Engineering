@@ -26,7 +26,7 @@ export default function Impressum() {
 
         <br />
 
-        <p>Die berufsrechtlichen Regelungen können über die vom Bundesministerium der Justiz un dvon der juris GmbH betriebenen Homepage <a href='http://www.gesetze-im-internet.de/' target='_blank'>www.gesetze-im-internet.de</a> eingesehgen und abgerufen werden. </p>
+        <p>Die berufsrechtlichen Regelungen können über die vom Bundesministerium der Justiz und von der juris GmbH betriebenen Homepage <a href='http://www.gesetze-im-internet.de/' target='_blank'>www.gesetze-im-internet.de</a> eingesehgen und abgerufen werden. </p>
 
         <br />
 

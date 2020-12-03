@@ -41,82 +41,14 @@
 
 /* Mobile Styles */
 
-@media only screen and (max-width: 400px) {
-    body {
-        /* background-color: #F09A9D; */
-        /* Red */
-    }
-}
+@media only screen and (max-width: 400px) {}
 
 
 /* Tablet Styles */
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-
-    .feature1,
-    .feature2,
-    .feature3 {
-        width: 50%;
-    }
-
-    body {
-        background-color: #F5CF8E;
-        /* Yellow */
-    }
-}
+@media only screen and (min-width: 401px) and (max-width: 960px) {}
 
 
 /* Desktop Styles */
 /* reoder for desktop*/
-@media only screen and (min-width: 961px) {
-    .page {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .textArea {
-        order: 2;
-        width: 50%;
-    }
-
-    .imageArea {
-        width: 50%;
-    }
-
-    /* reorder featureBLocks for Desktop left/right */
-    .feature1 .textArea,
-    .feature3 .textArea {
-        order: 1;
-    }
-
-    .header {
-        min-height: 400px;
-        /* background-image: url('./headerWoodBanner.jpg'); */
-    }
-
-    .textHead {
-        /* width: 480px; */
-    }
-}
-
-.testImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    font-size: 100px;
-}
-
-
-h1 {
-    font-size: 2.5em;
-    line-height: 2em;
-}
-
-.alignLeft {
-    text-align: start;
-}
-
-.alignRight {
-    text-align: end;
-}
+@media only screen and (min-width: 961px) {}

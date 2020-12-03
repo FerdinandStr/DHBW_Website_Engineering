@@ -8,11 +8,10 @@
 }
 
 body {
-    /* line-height: 1; */
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
+    color: #333;
 }
 
 p {
@@ -32,11 +31,9 @@ button {
     cursor: pointer;
 }
 
-/* !!! UNSERE STYLES !!! */
-
 h1 {
-    font-size: 3rem;
-    /* font-family: 'Courgette', cursive; */
+    font-size: 3em;
+    line-height: 2em;
     font-family: 'Merienda', cursive;
     font-style: italic;
 }
@@ -54,8 +51,13 @@ a {
 }
 
 .defaultPageContainer {
-    max-width: 1200px;
+    max-width: 1250px;
+    padding: 0 50px 50px;
     margin: auto;
     display: flex;
     flex-direction: column;
+}
+
+.box {
+    width: 100%;
 }

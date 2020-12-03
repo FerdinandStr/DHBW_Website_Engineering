@@ -9,7 +9,7 @@ import LoginMask from './Sites/Login'
 ReactDOM.render(
     <Router>
         <Switch>
-            <Route path='/login'><LoginMask /></Route>
+            {/* <Route path='/login'><LoginMask /></Route> */}
             <Route path='/'><Layout /></Route>
         </Switch>
     </Router>,

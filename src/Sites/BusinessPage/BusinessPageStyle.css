@@ -1,11 +1,62 @@
+.bpc {
+    margin-bottom: 100px;
+}
+
+.businessTextContainer {
+    padding: 50px 0;
+}
+
 .businessTextContainer h2 {
-    font-size: 3em;
+    text-align: center;
+    font-size: 2em;
+    line-height: 2em;
 }
 
 .businessTextContainer p {
     font-size: 1.2em;
 }
 
-.flexRight {
-    text-align: right;
+.busIcons {
+    width: 200px;
+    margin: 0 50px;
+}
+
+.busCogoLogo {
+    margin-top: 25px;
+    width: 300px;
+}
+
+.businessBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media only screen and (min-width: 1080px) {
+    .busIcons {
+        width: 300px;
+    }
+
+    .busCogoLogo {
+        width: 600px;
+        height: 200px;
+    }
+
+    .businessBlock {
+        flex-direction: row;
+    }
+
+    .flexAlignLeft {
+        text-align: right;
+    }
+
+    .flexAlignRight {
+        order: 2;
+    }
+
+    .businessTextContainer h2 {
+        font-size: 3em;
+    }
 }

@@ -46,9 +46,16 @@
     padding-top: 10px;
 }
 
+.registerIcon {
+    transition: all .15s ease-in-out;
+}
 
 .registerIcon img {
     width: 90px;
+}
+
+.registerIcon:hover {
+    transform: scale(1.05);
 }
 
 .FooterSocialMediaCol {

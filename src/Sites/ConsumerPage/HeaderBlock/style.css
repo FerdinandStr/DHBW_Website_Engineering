@@ -13,27 +13,42 @@
 
 }
 
-.textHead1 {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
-    background-color: rgba(0, 0, 0, 0.35);
-    /* opacity: 0; */
-    color: white;
-    text-align: center;
-    position: absolute;
-
-    margin-top: 3em;
+.header h1 {
+    font-size: 2em;
+    hyphens: manual;
 }
 
+@media only screen and (min-width: 1080px) {
+    .header h1 {
+        font-size: 2.5em;
+        line-height: 2.5em;
+    }
+}
+
+.headerTextBlock {
+    margin-top: 100px;
+}
+
+.textHead1,
 .textHead2 {
+    background-color: rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.45);
+    padding: 5px;
+    border-radius: 10px;
     color: white;
     text-align: center;
     position: absolute;
 }
 
-.imageArea {
-    order: 2;
-    display: flex;
+
+.contractIcon {
+    width: 20%;
 }
+
+.CoGoHeaderLogo {
+    width: 40%;
+}
+
 
 .headerImageLeft {
     /* display: block; */
@@ -64,4 +79,12 @@
 
 .headerOldText {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.AbZettel {
+    width: 300px;
+    border-radius: 10px;
+    transform: rotate(5deg);
+    box-shadow: 0 0 8px 10px rgba(0, 0, 0, 0.35);
 }

@@ -1,76 +1,97 @@
-.Kontaktsymbole{
-margin-left: 10%;
-margin-right: 10%;
-    }
-
-.IconContainerKontak{
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
+.kontaktPageContainer {
+    text-align: center;
 }
 
-.Kontakticon1{
-        float: left;
-        padding-right: 1%;
-        background: rgb(255, 255, 255);
-        width: 30.666666666%;
-        height: 200px;
-        box-sizing: border-box;
-        padding-left: 1%;
-        margin-left: 2%;
-    }
+.kontaktPageContainer p {
+    font-size: 1.1em;
+}
+
+.kontaktPageContainer h1 {
+    margin: 50px 0;
+}
+
+.kontaktPageContainer h3 {
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.Kontaktsymbole {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.IconContainerKontakt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.KontaktBlock {
+    flex: 1;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    margin: 0 20px;
+
+}
 
 @media all and (max-device-width: 767px) {
-    .Kontakticon1{
+    .Kontakticon1 {
         width: 100%;
     }
 }
 
-.BitmojiContainerKontakt{
+.BitmojiContainerKontakt {
     display: flex;
     flex-direction: row;
-    padding: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .BitmojiContainerKontakt p {
     text-align: center;
     font-style: italic;
     max-width: 230px;
     padding-top: 30px;
 }
-.defaultPageContainerKontakt{
-    text-align: center;
+
+.BitmojiIconcontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
-    .BitmojiIconcontainer{
-        display: flex;
+
+
+
+.rund {
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0px 10px 0px grey;
+    transition: all .15s ease-in-out;
+}
+
+.rund:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0px 15px 0px grey;
+}
+
+
+@media (max-width: 480px) {
+    .IconContainerKontak {
         flex-direction: column;
-        padding: 10px;
-    }
-    
-    .rund {
-        border-radius: 100px;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        max-width: 250px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 250px;
-        height: 250px;
-        padding-right: 25px;
-        padding-left: 25px;
-        box-shadow: 3px 3px 2px grey;
+        align-items: center;
     }
 
-    @media (max-width: 480px) {
-        .IconContainerKontak {
-            flex-direction: column;
-            align-items: center;
-        }
-        .BitmojiContainerKontakt{
-            display: flex;
-            flex-direction: column;
-            }
+    .BitmojiContainerKontakt {
+        display: flex;
+        flex-direction: column;
     }
+}
