@@ -1,0 +1,29 @@
+.MiniBlocksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.MiniBlocksContainer>div {
+
+    width: 350px;
+    height: 300px;
+    margin: 15px;
+
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    text-align: center;
+}
+
+.MiniBlocksContainer h3 {
+    margin: 15px;
+    font-size: 2em;
+
+}
+
+.MiniIcon {
+    color: #E1A700;
+    font-size: 4em;
+}

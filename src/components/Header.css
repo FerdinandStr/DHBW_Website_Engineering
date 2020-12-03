@@ -9,7 +9,17 @@
     /*SYNC WITH FUNCTION ON Header.js*/
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+}
+
+.headerSolid {
+    position: static;
+    height: 110px;
+    background-image: url("./HeaderBg.webp");
+    background-attachment: fixed;
+    /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75); */
+    box-shadow: inset 0px -10px 30px 5px rgba(0, 0, 0, 0.75);
+    margin-bottom: 15px;
 }
 
 .headerDiv>a {
@@ -30,7 +40,7 @@
 .headerLinkText {
     transition: all .15s;
     padding: 30px;
-    font-size: 1.5em;
+    font-size: 1.6em;
     z-index: 10;
 }
 

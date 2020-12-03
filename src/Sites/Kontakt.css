@@ -1,0 +1,27 @@
+.Kontaktsymbole{
+margin-left: 10%;
+margin-right: 10%;
+    }
+.Kontakticon1{
+        float: left;
+        padding: 20px;
+        padding-right: 1%;
+        display: flex;
+        flex-direction: row;
+        background: rgb(255, 255, 255);
+        width: 30.666666666%;
+        height: 200px;
+        box-sizing: border-box;
+        padding-left: 1%;
+        margin-left: 2%;
+        text-align: center;
+
+
+    }
+@media all and (max-device-width: 767px) {
+    body{}
+    .Kontakticon1{
+        width: 100%;
+
+    }
+}

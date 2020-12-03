@@ -5,10 +5,10 @@ import './Footer.css'
 
 export default function Footer() {
 
-    return <footer id='footer' className='footerDiv'>
-        <div className='footerHead'><span>COGO</span></div>
-        <div className='container'>
-            <div className='FooterRowElement'>
+    return <footer className='footerDiv'>
+        {/* <div className='footerHead'><span>COGO</span></div> */}
+        <div className='footerContentDiv'>
+            <div className='FooterFlexChild'>
                 <div className='Textdata' >Für aktuelle Informationen:</div>
                 <div className='links'>
                     <a href='https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4'>Aktuelle Fallzahlen des RKI</a>
@@ -16,17 +16,18 @@ export default function Footer() {
                 <div className='links'>
                     <a href='https://www.bundesregierung.de/breg-de/themen/coronavirus/coronavirus-aktuelle-informationen'>Informationen der Bundesregierung</a>
                 </div>
+                <div>Icons made by <a href='https://www.flaticon.com/authors/eucalyp' title='Eucalyp'>Eucalyp</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a></div>
             </div>
-            <div className='FooterRowElement'>
+            <div className='FooterFlexChild'>
                 <div className='Textdata'>Download</div>
-                <div className='linkGoogle'>
+                <div className='downloadLinkContainer'>
                     <a href='https://play.google.com/'><img loading='lazy' src='./icons/GooglePlayStore.svg' /></a>
                 </div>
-                <div className='linkApple'>
+                <div className='downloadLinkContainer'>
                     <a href='https://www.apple.com/de/ios/app-store/'><img loading='lazy' src='./icons/AppleAppStore.svg' /></a><br />
                 </div>
             </div>
-            <div className='FooterRowElement'>
+            <div className='FooterFlexChild'>
                 <div className='Textdata'>Folgt uns:</div>
                 <div className='FooterSocialMediaCol'>
                     <div className='registerIcon'><a href='https://twitter.com/'><img loading='lazy' src='./icons/twitter.svg' /></a></div>

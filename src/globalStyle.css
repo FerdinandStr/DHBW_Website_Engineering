@@ -12,6 +12,11 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+}
+
+p {
+    line-height: 1.3em;
 }
 
 
@@ -36,14 +41,21 @@ h1 {
     font-style: italic;
 }
 
-
-.fullBlock {
-    display: block;
-    width: 100%;
+a {
+    text-decoration: underline;
+    cursor: pointer;
 }
+
 
 .flexBoxCenterColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.defaultPageContainer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }

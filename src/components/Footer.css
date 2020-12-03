@@ -1,23 +1,19 @@
 .footerDiv {
-    /*DEBUG*/
-   
-    bottom: 0;
-    width: 100%;
-    height: 20%;
-    background-color:#333;
+    padding-top: 15px;
+    background-image: url("./FooterBg.webp");
+    background-attachment: fixed;
+    box-shadow: inset 0px 10px 30px 5px rgba(0, 0, 0, 0.75);
     color: white;
-    transition: 0.2s;  
-    position: absolut;
-    justify-content: center;
-    align-items: center;
 }
 
-.container{
+.footerContentDiv {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
-.footerHead{
+
+.footerHead {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid white;
@@ -26,73 +22,75 @@
     font-size: 2.0em;
 }
 
-.footerHead span{
+.footerHead span {
     line-height: 15px;
     padding: 0 10px;
     display: inline-block;
     margin-top: 10px;
-    background:  #333;
+    background: #333;
 }
 
-.bottomFooterBar{
+.bottomFooterBar {
     text-align: center;
     padding: 25px;
 }
 
-.FooterRowElement{
+.FooterFlexChild {
+    margin: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.footerDiv a{
-    color:#DAA520; 
+.footerDiv a {
+    color: white;
     padding-top: 10px;
-    text-decoration-line: none;
 }
 
-a:hover{
-    color: #DAA520;
-}
 
-.registerIcon img{
+.registerIcon img {
     width: 90px;
 }
 
-.FooterSocialMediaCol{
+.FooterSocialMediaCol {
     display: flex;
     flex-direction: row;
 }
 
-.Textdata{
-    padding: 12px;
-    font-size: 1.2em;
-    font-weight: bold;
+.Textdata {
+    font-size: 1.5em;
     text-align: center;
 }
 
-.links{
-    padding-bottom: 8px;
+.links a {
+    display: block;
+    transition: all .15s ease-in-out;
 }
 
-.linkGoogle img{
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
+.links a:hover {
+    transform: scale(1.05);
 }
 
-.linkApple img{
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto;
+.downloadLinkContainer {
+    width: 250px;
+    transition: all .15s ease-in-out;
 }
 
-@media (max-width: 480px){
-    .container{
+.downloadLinkContainer img {
+    width: 100%;
+    margin: 5px;
+}
+
+.downloadLinkContainer:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .container {
         flex-direction: column;
         align-items: center;
-    } 
-    
-    .FooterRowElement{
+    }
+
+    .FooterRowElement {
         padding-top: 10px;
     }
 }

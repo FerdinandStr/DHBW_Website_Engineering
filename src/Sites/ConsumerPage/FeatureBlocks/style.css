@@ -1,55 +1,82 @@
-.featureBlockContainer {
-    position: relative;
+/* +++++++++ GLOBAL +++++++++ */
+
+.featureBlocksMainDiv {
+    display: flex;
+    flex-direction: column;
 }
 
-.bgImg {
-    width: 100%;
+.relativePositionContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.blockText {
+    z-index: 1;
+    text-align: center;
+    margin: 1em 0;
 }
 
 .blockText h2 {
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 0.5em;
 }
 
 .blockText p {
     line-height: 1.3em;
-    font-size: 1.3em;
+    font-size: 1.2em;
+}
+
+@media only screen and (min-width: 1080px) {
+    .blockText h2 {
+        font-size: 3em;
+    }
+
+    .blockText p {
+        font-size: 1.3em;
+    }
 }
 
 /* +++++++++ FIRST BLOCK +++++++++ */
+
 .QrCogoDiv {
     position: absolute;
-    top: 8%;
-    left: 25%;
-    width: 25%;
+    top: 0%;
+    left: 28%;
+    width: 35%;
 }
 
 .QrCogoDiv img {
     width: 100%;
 }
 
-.qrBlockDescription {
-    position: absolute;
-    top: 8%;
-    right: 15%;
 
-    width: 30%;
+@media only screen and (min-width: 1080px) {
+    .QrCogoDiv {
+        position: absolute;
+        top: 8%;
+        left: 25%;
+        width: 25%;
+    }
+
+    .qrBlockDescription {
+        position: absolute;
+        top: 8%;
+        right: 15%;
+
+        width: 30%;
+    }
 }
 
 /* +++++++++ SECOND BLOCK +++++++++ */
 
-.phoneBlockDescription {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 40%;
-}
-
 .PhoneDiv {
     position: absolute;
-    top: 15%;
-    right: 10%;
-    width: 21%;
+    top: 5%;
+    right: 5%;
+    width: 45%;
+    /* transform: rotate(3deg); */
 }
 
 .PhoneDiv img {
@@ -57,9 +84,25 @@
     transform: rotate(0deg);
 }
 
-/* +++++++++ WOOD PLANK BLOCK +++++++++ */
+@media only screen and (min-width: 1080px) {
+    .phoneBlockDescription {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 40%;
+    }
 
-.woodPlankDescription {
+    .PhoneDiv {
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        width: 21%;
+    }
+}
+
+/* +++++++++ FOOD TABLE BLOCK +++++++++ */
+
+.tableDescription {
     margin: 100px 0;
     display: flex;
     flex-direction: column;
@@ -72,10 +115,10 @@
     /* border-radius: 5px; */
     height: 400px;
     width: 100%;
-    background-image: url(./bgPlatter.webp);
+    background-image: url('./bgPlatter.webp');
     /* background-image: url(/restaurant-691397_1920-min.jpg); */
     /* background-image: url(./woodBgTest.webp); */
-    background-position: bottom center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -83,15 +126,34 @@
     /*TODO maybe disable on Mobile => background-attachment: scroll;*/
 }
 
-.woodPlankDescription div {}
-
-.woodPlankDescription h1 {
+.tableDescription h1 {
     font-size: 4em;
     color: white;
     text-shadow: 2px 2px #00000044;
 }
 
-.woodPlankDescription p {
+.tableDescription p {
     font-size: 2em;
     color: #eee;
+}
+
+/* +++++++++ THIRD BLOCK +++++++++ */
+
+.phoneLeaveBlockDescription {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 40%;
+}
+
+.phoneLeaveDiv {
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    width: 21%;
+}
+
+.phoneLeaveDiv img {
+    width: 100%;
+    transform: rotate(0deg);
 }

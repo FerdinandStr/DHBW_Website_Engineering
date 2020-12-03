@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
 
-export default function Header() {
+export default function Header({ isHeaderSolid }) {
     /*
     window.onscroll = function () { scrollFunction() }
 
@@ -24,8 +24,7 @@ export default function Header() {
 
 
 
-    return <header id='header' className='headerDiv'>
-        {/* <div className='registerIcon'><img src='./noun_register_1753825.svg'></img></div> */}
+    return <header id='header' className={isHeaderSolid ? 'headerDiv headerSolid' : 'headerDiv'}>
         <menu className='headerMenu'>
             <li className='headerLinkText' id='link1'><Link to='/consumer' >Home</Link></li>
             <li className='headerLinkText' id='link2'><Link to='/business' >Business</Link></li>

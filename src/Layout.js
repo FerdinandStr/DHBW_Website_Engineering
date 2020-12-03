@@ -4,7 +4,7 @@ import { Route, Switch, useHistory, Redirect } from 'react-router-dom'
 import Header from './components/Header'
 import ConsumerPage from './Sites/ConsumerPage/ConsumerPage'
 import Footer from './components/Footer'
-import BusinessPage from './Sites/BusinessPage'
+import BusinessPage from './Sites/BusinessPage/BusinessPage'
 import Kontakt from './Sites/Kontakt'
 import Impressum from './Sites/Impressum'
 import FAQ from './Sites/FAQ'
@@ -26,7 +26,7 @@ export default function App() {
         console.log(passwordFromCookie)
 
 
-        if (passwordFromCookie[0] === 'MeinenHerzlichenGlühstrumpf') {
+        if (passwordFromCookie[0] === '') {
             setIsLoggedIn(true)
             console.log('WE ARE IN')
         } else {
@@ -42,7 +42,7 @@ export default function App() {
         <Switch>
             <Redirect exact from='/' to='consumer' />
             <Route path='/c/:id?'><CoGoMockup /></Route>
-            <Route path='/consumer'><PageWrapper><ConsumerPage /></PageWrapper></Route>
+            <Route path='/consumer'><PageWrapper isHeaderSolid={false}><ConsumerPage /></PageWrapper></Route>
             <Route path='/business'><PageWrapper><BusinessPage /></PageWrapper></Route>
             <Route path='/Kontakt' ><PageWrapper><Kontakt /></PageWrapper></Route>
             <Route path='/Impressum' ><PageWrapper><Impressum /></PageWrapper></Route>

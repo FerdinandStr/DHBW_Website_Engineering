@@ -1,0 +1,11 @@
+.businessTextContainer h2 {
+    font-size: 3em;
+}
+
+.businessTextContainer p {
+    font-size: 1.2em;
+}
+
+.flexRight {
+    text-align: right;
+}
