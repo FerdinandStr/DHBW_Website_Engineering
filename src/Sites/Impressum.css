@@ -1,0 +1,22 @@
+.ImpressumContainer h2{
+    font-size: 2em;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.ImpressumContainer h3{
+    padding-top: 18px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.ListImpressum{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 20px;
+}
+.ImpressumContainer p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

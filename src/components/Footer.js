@@ -39,6 +39,6 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-        <div className='bottomFooterBar'>&copy;2020 Ferdinand Straß, Lenny Floruß, Timo Oswald, Manfred Meier &#124; <Link to='/Impressum'>Impressum</Link> &#124; Kontakt</div>
+        <div className='bottomFooterBar'>&copy;2020 Ferdinand Straß, Lenny Floruß, Timo Oswald, Manfred Meier &#124; <Link to='/Impressum'>Impressum</Link> &#124; <Link to='/Kontakt'>Kontakt</Link></div>
     </footer >
 }
