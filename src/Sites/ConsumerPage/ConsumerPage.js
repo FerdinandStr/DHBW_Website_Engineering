@@ -4,6 +4,7 @@ import 'animate.css'
 import HeaderBlock from './HeaderBlock'
 import FeatureBlocks from './FeatureBlocks'
 import MiniBlocks from './MiniBlocks'
+import { Link } from 'react-router-dom'
 
 export default function ConsumerPage() {
 
@@ -14,5 +15,8 @@ export default function ConsumerPage() {
         <div className='defaultPageContainer'>
             <MiniBlocks />
         </div>
+
+        <h1 className='BlockHeader'>Sie sind Interessiert? Mehr erfahren sie auf unserer Business-Seite</h1>
+        <Link to='/business'>TODO !!!!</Link>
     </div >
 }

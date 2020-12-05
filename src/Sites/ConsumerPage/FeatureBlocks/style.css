@@ -15,7 +15,7 @@
 .blockText {
     z-index: 1;
     text-align: center;
-    margin: 1em 0;
+    padding: 1em 10px;
 }
 
 .blockText h2 {
@@ -28,6 +28,14 @@
     font-size: 1.2em;
 }
 
+.featureBlockContainer {
+    margin-bottom: 50px;
+}
+
+.bgImg {
+    width: 100%;
+}
+
 @media only screen and (min-width: 1080px) {
     .blockText h2 {
         font-size: 3em;
@@ -36,7 +44,12 @@
     .blockText p {
         font-size: 1.3em;
     }
+
+    .featureBlockContainer {
+        margin-bottom: 0;
+    }
 }
+
 
 /* +++++++++ FIRST BLOCK +++++++++ */
 
@@ -73,15 +86,16 @@
 
 .PhoneDiv {
     position: absolute;
-    top: 5%;
+    top: 0%;
     right: 5%;
-    width: 45%;
-    /* transform: rotate(3deg); */
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
 }
 
 .PhoneDiv img {
-    width: 100%;
-    transform: rotate(0deg);
+    height: 130%;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -93,20 +107,25 @@
     }
 
     .PhoneDiv {
+        display: block;
         position: absolute;
         top: 15%;
         right: 10%;
         width: 21%;
+    }
+
+    .PhoneDiv img {
+        width: 100%;
+        height: auto;
     }
 }
 
 /* +++++++++ FOOD TABLE BLOCK +++++++++ */
 
 .tableDescription {
-    margin: 100px 0;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: center;
     align-items: center;
 
@@ -115,45 +134,73 @@
     /* border-radius: 5px; */
     height: 400px;
     width: 100%;
-    background-image: url('./bgPlatter.webp');
+    background-image: url('./BgPlatter.webp');
     /* background-image: url(/restaurant-691397_1920-min.jpg); */
     /* background-image: url(./woodBgTest.webp); */
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
     /*TODO maybe disable on Mobile => background-attachment: scroll;*/
 }
 
 .tableDescription h1 {
-    font-size: 4em;
+    font-size: 3em;
     color: white;
     text-shadow: 2px 2px #00000044;
 }
 
-.tableDescription p {
-    font-size: 2em;
-    color: #eee;
+@media only screen and (min-width: 1080px) {
+    .tableDescription h1 {
+        font-size: 4em;
+    }
+
+    .tableDescription {
+        margin: 100px 0;
+        background-attachment: fixed;
+    }
 }
 
 /* +++++++++ THIRD BLOCK +++++++++ */
 
-.phoneLeaveBlockDescription {
-    position: absolute;
-    top: 25%;
-    left: 35%;
-    width: 40%;
-}
-
 .phoneLeaveDiv {
     position: absolute;
-    top: 12%;
-    left: 8%;
-    width: 21%;
+    top: 0%;
+    left: 0%;
+    /* width: 21%; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .phoneLeaveDiv img {
-    width: 100%;
-    transform: rotate(0deg);
+    height: 140%;
+}
+
+.lastFeatureBlock {
+    margin-bottom: 100px;
+}
+
+@media only screen and (min-width: 1080px) {
+    .phoneLeaveBlockDescription {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        width: 40%;
+    }
+
+    .phoneLeaveDiv {
+        display: block;
+        position: absolute;
+        top: 12%;
+        left: 8%;
+        width: 21%;
+    }
+
+    .phoneLeaveDiv img {
+        width: 100%;
+        height: auto;
+    }
 }

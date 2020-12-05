@@ -11,12 +11,17 @@
     position: static;
     height: 110px;
     background-image: url("./HeaderBg.webp");
-    background-attachment: fixed;
+    background-attachment: scroll;
     /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75); */
     box-shadow: inset 0px -10px 30px 5px rgba(0, 0, 0, 0.75);
     margin-bottom: 15px;
 }
 
+@media only screen and (min-width: 1080px) {
+    .headerSolid {
+        background-attachment: fixed;
+    }
+}
 
 .headerMenu {
     display: flex;
@@ -28,7 +33,7 @@
 
 .headerLinkText {
     transition: all .15s;
-    padding: 5px 30px 0;
+    padding: 10px 30px 0;
     font-size: 1.6em;
     z-index: 10;
 }
@@ -45,14 +50,16 @@
     color: #E1A700;
 }
 
+.headerLinkImg {
+    transition: all .15s;
+    padding: 5px 10px;
+    height: 50px;
+}
 
-.fixedBgScrollImage {
-    border-radius: 5px;
-    height: 200px;
-    width: 100%;
-    background-image: url(/restaurant-691397_1920-min.jpg);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.headerLinkImg img {
+    height: 100%;
+}
+
+.headerLinkImg:hover {
+    transform: scale(1.05);
 }

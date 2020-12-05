@@ -12,26 +12,17 @@
     width: 100%;
     display: auto;
     flex-direction: column;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: lightgray;
-}
-
-
-#ClosedContainer {
-    display: flex;
-    cursor: pointer;
-}
-
-#ClosedPanelContainer {
-    display: flex;
-    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #E1A700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
 }
 
 
 .ContainerHeader {
     display: flex;
     margin-bottom: 8px;
+    cursor: pointer;
 }
 
 /* CONTENT MOVEMENT */
@@ -55,7 +46,8 @@
     grid-row: 1;
     width: 20px;
     height: 20px;
-    margin: auto 10px auto auto;
+    margin: auto 20px auto auto;
+    color: white;
 }
 
 .FoldingIcon {

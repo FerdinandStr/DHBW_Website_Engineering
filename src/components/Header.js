@@ -9,6 +9,13 @@ export default function Header({ isHeaderSolid }) {
             <li className='headerLinkText' id='link2'><Link to='/business' >Business</Link></li>
             <li className='headerLinkText' id='link3'><Link to='/FAQ' >FAQ </Link></li>
             <li className='headerLinkText' id='link4'><Link to='/Kontakt' >Kontakt</Link></li>
+            {
+                isHeaderSolid
+                    ? null
+                    : <><li className='headerLinkImg'><a href='https://play.google.com/'><img loading='lazy' src='./GooglePlayStore.svg' /></a></li>
+                        <li className='headerLinkImg'><a href='https://www.apple.com/de/ios/app-store/'><img loading='lazy' src='./AppleAppStore.svg' /></a></li>
+                    </>
+            }
         </menu>
     </header >
 }

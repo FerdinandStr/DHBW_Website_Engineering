@@ -1,21 +1,20 @@
 {
     "scripts": {
         "start": "snowpack dev",
-        "build": "snowpack build"
+        "build": "snowpack build",
+        "wp": "webpack --config webpack.common.js"
     },
     "dependencies": {
-        "@snowpack/plugin-optimize": "^0.2.9",
-        "@snowpack/plugin-webpack": "^2.1.1",
         "animate.css": "^4.1.1",
         "react": "^17.0.1",
         "react-animate-on-scroll": "^2.1.5",
         "react-dom": "^17.0.1",
         "react-icons": "^4.1.0",
-        "react-responsive": "^8.2.0",
-        "react-router-dom": "^5.2.0",
-        "react-scroll-parallax": "^2.3.5"
+        "react-router-dom": "^5.2.0"
     },
     "devDependencies": {
+        "@snowpack/plugin-optimize": "^0.2.9",
+        "@snowpack/plugin-webpack": "^2.1.1",
         "@babel/plugin-transform-react-jsx": "^7.12.7",
         "@babel/preset-react": "^7.12.7",
         "@snowpack/plugin-babel": "^2.1.4",

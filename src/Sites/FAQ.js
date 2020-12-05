@@ -6,8 +6,8 @@ export default function FAQ() {
 
 
 
-    return <div className='faqPage'>
-        <h2>Häufig gestellte Fragen</h2>
+    return <div className='defaultPageContainer faqPage'>
+        <h1 className='BlockHeader'>Häufig gestellte Fragen</h1>
         <GenericFoldingContainer headlineComponent={<h2>Warum werden diese Daten erhoben?</h2>}>
             <div className='content'>
                 <p>In Zeiten von Corona ist es wichtig die Ansteckungszahl zu minimieren. Durch die Datenerhebung ist eine Kontaktverfolgung von Positiv getesteten Personen, die ein Restaurant besucht haben, möglich, um andere Gäste und das Gesundheitsamt schnellstmöglich über mögliche Ansteckungen zu Informieren. Darüber hinaus ist uns wichtig, dass der Restaurantbetrieb auch in ungewöhnlichen Zeiten, sicher fortgeführt werden kann. </p>

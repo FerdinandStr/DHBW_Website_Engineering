@@ -8,7 +8,7 @@
 .MiniBlocksContainer>div {
 
     width: 350px;
-    height: 300px;
+    min-height: 300px;
     margin: 15px;
 
     border-radius: 3px;
@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-.MiniBlocksContainer h3 {
+.MiniBlocksContainer h2 {
     margin: 15px;
     font-size: 2em;
 

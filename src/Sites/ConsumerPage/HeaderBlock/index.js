@@ -8,7 +8,7 @@ export default function HeaderBlock() {
     useEffect(() => {
         const timer = setInterval(() => {
             setShowOld(value => !value)
-        }, 3000)
+        }, 6000)
         return () => clearInterval(timer)
     })
 

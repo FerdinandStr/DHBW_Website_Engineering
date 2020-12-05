@@ -5,7 +5,7 @@
     background-position: top center;
     /* background-repeat: no-repeat; */
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
     height: 100vh;
 
@@ -15,11 +15,11 @@
 
 .header h1 {
     font-size: 2em;
-    hyphens: manual;
 }
 
 @media only screen and (min-width: 1080px) {
     .header h1 {
+        background-attachment: fixed;
         font-size: 2.5em;
         line-height: 2.5em;
     }

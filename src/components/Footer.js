@@ -9,33 +9,33 @@ export default function Footer() {
         {/* <div className='footerHead'><span>COGO</span></div> */}
         <div className='footerContentDiv'>
             <div className='FooterFlexChild'>
-                <div className='Textdata' >Für aktuelle Informationen:</div>
+                <h3 className='Textdata' >Aktuelle Informationen</h3>
                 <div className='links'>
                     <a href='https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4'>Aktuelle Fallzahlen des RKI</a>
                 </div>
                 <div className='links'>
                     <a href='https://www.bundesregierung.de/breg-de/themen/coronavirus/coronavirus-aktuelle-informationen'>Informationen der Bundesregierung</a>
                 </div>
-                <div>Icons made by <a href='https://www.flaticon.com/authors/eucalyp' title='Eucalyp'>Eucalyp</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a></div>
+                {/* <div>Icons made by <a href='https://www.flaticon.com/authors/eucalyp' title='Eucalyp'>Eucalyp</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a></div> */}
             </div>
             <div className='FooterFlexChild'>
-                <div className='Textdata'>Download</div>
+                <h3 className='Textdata'>Download</h3>
                 <div className='downloadLinkContainer'>
                     <a href='https://play.google.com/'><img loading='lazy' src='./GooglePlayStore.svg' /></a>
                 </div>
                 <div className='downloadLinkContainer'>
-                    <a href='https://www.apple.com/de/ios/app-store/'><img loading='lazy' src='./AppleAppStore.svg' /></a><br />
+                    <a href='https://www.apple.com/de/ios/app-store/'><img loading='lazy' src='./AppleAppStore.svg' /></a>
                 </div>
             </div>
             <div className='FooterFlexChild'>
-                <div className='Textdata'>Folgt uns:</div>
+                <h3 className='Textdata'>Folgt uns</h3>
                 <div className='FooterSocialMediaCol'>
-                    <div className='registerIcon'><a href='https://twitter.com/'><img loading='lazy' src='./twitter.svg' /></a></div>
-                    <div className='registerIcon'><a href='https://de-de.facebook.com/'><img loading='lazy' src='./facebook.svg' /></a></div>
+                    <div className='socialIcon'><a href='https://twitter.com/'><img loading='lazy' src='./twitter.svg' /></a></div>
+                    <div className='socialIcon'><a href='https://de-de.facebook.com/'><img loading='lazy' src='./facebook.svg' /></a></div>
                 </div>
                 <div className='FooterSocialMediaCol'>
-                    <div className='registerIcon'><a href='https://www.instagram.com'><img loading='lazy' src='./instagram.svg' /></a></div>
-                    <div className='registerIcon'><a href='https://de.linkedin.com/'><img loading='lazy' src='./linkedIn.svg' /></a></div>
+                    <div className='socialIcon'><a href='https://www.instagram.com'><img loading='lazy' src='./instagram.svg' /></a></div>
+                    <div className='socialIcon'><a href='https://de.linkedin.com/'><img loading='lazy' src='./linkedIn.svg' /></a></div>
                 </div>
             </div>
         </div>
