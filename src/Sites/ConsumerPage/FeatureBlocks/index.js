@@ -12,13 +12,18 @@ export default function FeatureBlocks() {
 
         <h1 className='BlockHeader'>So einfach gehts!</h1>
 
-        <div className='featureBlockContainer relativePositionContainer'>
+        {/* //relativer Container */}
+        <div className='relativePositionContainer featureBlockContainer'>
+            {/* //child mit position absolute landet auf dem container => z.B. top:15% left:30% */}
             <div className='blockText qrBlockDescription'>
                 <h2>QR-Code scannen</h2>
                 <p>Lesen sie einfach mit der App oder der Kamera Ihres Smartphones den QR-Code ein oder besuchen sie alternativ den dazugehörigen Link im Browser</p>
             </div>
-            <div className='relativePositionContainer bgImgContainer'>
+            {/* //relativer Container, der ganz oben sitzt, solange der text absolut positioniert ist*/}
+            <div className='relativePositionContainer'>
+                {/* erstes element, immer oben in diesem div */}
                 <img loading='lazy' src='QrCodeBg.webp' className='bgImg' />
+                {/* child mit position absolute wird über das Bild bewegt mit => z.b. top:8% left:25%*/}
                 <div className='QrCogoDiv'>
                     <ScrollAnimation animateIn='animate__pulse' animateOnce={false}>
                         <img loading='lazy' src='QrCogo.webp' />
@@ -28,13 +33,13 @@ export default function FeatureBlocks() {
         </div>
 
 
-        <div className='featureBlockContainer relativePositionContainer'>
+        <div className='relativePositionContainer featureBlockContainer'>
             <div className='blockText phoneBlockDescription'>
                 <h2>Formular ausfüllen</h2>
                 <p>Füllen sie das Formular aus und fügen Sie falls nötig weitere Personen hinzu.</p>
                 <p>Beim nächsten Restaurantbesuch werden Ihre Daten dann automatisch aus dem lokalen Speicher geladen.</p>
             </div>
-            <div className='relativePositionContainer bgImgContainer'>
+            <div className='relativePositionContainer'>
                 <img loading='lazy' src='BgForPhone.webp' className='bgImg' />
 
                 <ScrollAnimation animateIn='animate__fadeInRight' animateOnce={false} className='PhoneDiv'>
@@ -52,13 +57,13 @@ export default function FeatureBlocks() {
         </div>
 
 
-        <div className='featureBlockContainer relativePositionContainer lastFeatureBlock'>
+        <div className='relativePositionContainer featureBlockContainer lastFeatureBlock'>
             <div className='blockText phoneLeaveBlockDescription'>
                 <h2>Danke für Ihren Besuch!</h2>
                 <p>Das Verlassen muss am Ende nur noch in der App bestätigt werden,</p>
                 <p>um den Anwesenheitszeitraum korrekt zu erfassen.</p>
             </div>
-            <div className='relativePositionContainer bgImgContainer'>
+            <div className='relativePositionContainer'>
                 <img loading='lazy' src='LeaveBg.webp' className='bgImg' />
                 {/* <div > */}
                 <ScrollAnimation animateIn='animate__fadeInLeft' animateOnce={false} className='phoneLeaveDiv'>
