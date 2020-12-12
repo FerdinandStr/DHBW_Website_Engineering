@@ -4,7 +4,7 @@ module.exports = {
         src: '/dist',
     },
     plugins: [
-        ["@snowpack/plugin-babel", { transformOptions: { presets: ["@babel/preset-react"] } }],
+        "@snowpack/plugin-babel",
         '@snowpack/plugin-react-refresh',
         '@snowpack/plugin-dotenv',
     ],
