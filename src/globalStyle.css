@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?&family=Merienda&family=Roboto:wght@400;500&display=swap');
 
 * {
     margin: 0;
@@ -42,6 +43,7 @@ a {
     text-decoration: underline;
     cursor: pointer;
     color: inherit;
+    transition: 0.15s ease-in-out;
 }
 
 a:hover {
@@ -57,7 +59,7 @@ a:hover {
 
 .defaultPageContainer {
     max-width: 1250px;
-    padding: 0 50px 50px;
+    padding: 0 25px 50px;
     margin: auto;
     display: flex;
     flex-direction: column;

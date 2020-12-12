@@ -23,6 +23,11 @@ export default function FAQ() {
                 <p>Die Daten werden für 4 Wochen gespeichert und anschließend automatisch gelöscht. Dies erfolgt nach den Gesetzlichen Vorgaben.</p>
             </div>
         </GenericFoldingContainer>
+        <GenericFoldingContainer headlineComponent={<h2>Für was steht CoGo?</h2>}>
+            <div className='content'>
+                <p>Come and Go, wegen des einloggens und verlassens im Restaurant.</p>
+            </div>
+        </GenericFoldingContainer>
         <GenericFoldingContainer headlineComponent={<h2>Ist die Datenübermittlung durch eine Ende-zu-Ende Verschlüsselung geschützt?</h2>}>
             <div className='content'>
                 <p>Ja, wir halten uns streng an die rechtlichen Vorgaben und daher findet auch eine Ende-zu-Ende Verschlüsselung statt, um ihre Daten bestmöglich zu schützen.</p>

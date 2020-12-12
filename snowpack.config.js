@@ -1,15 +1,12 @@
 module.exports = {
     mount: {
         public: '/',
-        src: '/_dist_',
+        src: '/dist',
     },
     plugins: [
-        "@snowpack/plugin-babel",
+        ["@snowpack/plugin-babel", { transformOptions: { presets: ["@babel/preset-react"] } }],
         '@snowpack/plugin-react-refresh',
         '@snowpack/plugin-dotenv',
-        // '@snowpack/plugin-webpack',
-        "@snowpack/plugin-optimize"
-
     ],
 };
 

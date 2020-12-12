@@ -6,35 +6,30 @@
     flex-wrap: wrap;
 }
 
+
+.businessLinkBlock {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.businessLinkBlock a {
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 1080px) {
     .BlockHeader {
         font-size: 4em;
     }
 }
 
-
-
 /* ############### HEADER AREA ############### */
-
-.textArea {
-    order: 1;
-    width: 100%;
-}
 
 
 /* MEDIA QUERIES */
-
-
-/* Mobile Styles */
-
 @media only screen and (max-width: 400px) {}
-
-
-/* Tablet Styles */
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {}
 
-
-/* Desktop Styles */
-/* reoder for desktop*/
 @media only screen and (min-width: 961px) {}
