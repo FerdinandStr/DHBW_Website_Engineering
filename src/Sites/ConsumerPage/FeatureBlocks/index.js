@@ -14,7 +14,7 @@ export default function FeatureBlocks() {
             {/* //child mit position absolute landet auf dem container => z.B. top:15% left:30% */}
             <div className='blockText qrBlockDescription'>
                 <h2>QR-Code scannen</h2>
-                <p>Lesen sie einfach mit der App oder der Kamera Ihres Smartphones den QR-Code ein oder besuchen sie alternativ den dazugehörigen Link im Browser</p>
+                <p>Lesen Sie einfach mit der App oder der Kamera Ihres Smartphones den QR-Code ein oder besuchen Sie alternativ den dazugehörigen Link im Browser</p>
             </div>
             {/* //relativer Container, der ganz oben sitzt, solange der text absolut positioniert ist*/}
             <div className='relativePositionContainer'>
@@ -33,7 +33,7 @@ export default function FeatureBlocks() {
         <div className='relativePositionContainer featureBlockContainer'>
             <div className='blockText phoneBlockDescription'>
                 <h2>Formular ausfüllen</h2>
-                <p>Füllen sie das Formular aus und fügen Sie falls nötig weitere Personen hinzu.</p>
+                <p>Füllen Sie das Formular aus und fügen Sie falls nötig weitere Personen hinzu.</p>
                 <p>Beim nächsten Restaurantbesuch werden Ihre Daten dann automatisch aus dem lokalen Speicher geladen.</p>
             </div>
             <div className='relativePositionContainer'>
