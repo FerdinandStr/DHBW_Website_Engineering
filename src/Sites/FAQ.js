@@ -4,8 +4,6 @@ import './FAQ.css'
 
 export default function FAQ() {
 
-
-
     return <div className='defaultPageContainer faqPage'>
         <h1 className='BlockHeader'>Häufig gestellte Fragen</h1>
         <GenericFoldingContainer headlineComponent={<h2>Warum werden diese Daten erhoben?</h2>}>

@@ -39,7 +39,7 @@ export default function FeatureBlocks() {
             <div className='relativePositionContainer'>
                 <img loading='lazy' src='BgForPhone.webp' className='bgImg' />
 
-                <ScrollAnimation animateIn='animate__fadeInRight' delay='200' animateOnce={false} className='PhoneDiv'>
+                <ScrollAnimation animateIn='animate__fadeInRight' delay={200} animateOnce={false} className='PhoneDiv'>
                     <img loading='lazy' src='MockupPhoneStart.webp' />
                 </ScrollAnimation >
             </div>
@@ -62,7 +62,7 @@ export default function FeatureBlocks() {
             </div>
             <div className='relativePositionContainer'>
                 <img loading='lazy' src='LeaveBg.webp' className='bgImg' />
-                <ScrollAnimation animateIn='animate__fadeInLeft' delay='200' animateOnce={false} className='phoneLeaveDiv'>
+                <ScrollAnimation animateIn='animate__fadeInLeft' delay={200} animateOnce={false} className='phoneLeaveDiv'>
                     <img loading='lazy' src='MockupPhoneLeave.webp' />
                 </ScrollAnimation >
             </div>

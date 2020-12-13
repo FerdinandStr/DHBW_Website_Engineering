@@ -3,8 +3,8 @@ import './style.css'
 
 export default function HeaderBlock() {
 
-    const [showOld, setShowOld] = useState(true)
-    //5 sekunden timer
+    const [showOld, setShowOld] = useState(false)
+    //6 sekunden timer
     useEffect(() => {
         const timer = setInterval(() => {
             setShowOld(value => !value)
@@ -21,9 +21,8 @@ export default function HeaderBlock() {
             </div>
             <div className={showOld ? 'textHead2 flipIn' : 'textHead2 flipOut'}>
                 <img className='CoGoHeaderLogo' src='./CogoLogo.svg' />
-                {/* <p><h1>CoGo</h1></p> */}
-                <p><h1>Modern. Simpel. Sicher.</h1></p>
-                <span><h1>Wir erleichtern die Datenerfassung</h1></span>
+                <h1>Modern. Simpel. Sicher.</h1>
+                <h1>Wir erleichtern die Datenerfassung</h1>
             </div>
         </div>
     </div>

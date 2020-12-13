@@ -1,8 +1,6 @@
 const TerserPlugin = require("terser-webpack-plugin")
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const webpack = require('webpack')
 const path = require('path')
 
 
@@ -40,7 +38,6 @@ module.exports = env => {
         },
         plugins: [
             new CleanWebpackPlugin()
-            // new BundleAnalyzerPlugin({ analyzerPort: 8889 })
         ]
     }
 }

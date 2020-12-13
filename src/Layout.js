@@ -20,7 +20,8 @@ export default function App() {
             <Route path='/Kontakt' ><PageWrapper><Kontakt /></PageWrapper></Route>
             <Route path='/Impressum' ><PageWrapper><Impressum /></PageWrapper></Route>
             <Route path='/FAQ' ><PageWrapper><FAQ /></PageWrapper></Route>
-            <Route ><Link to='/home'><div className='flexBoxCenterColumn'><img src='./404Image.png' /></div></Link></Route>
+            
+            <Route ><Link to='/home'><div className='flexBoxCenterColumn'><img src='./404Image.png' className="Error404Image" /></div></Link></Route>
         </Switch >
     </div >
 }

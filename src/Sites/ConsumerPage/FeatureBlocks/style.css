@@ -98,6 +98,13 @@
     height: 130%;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 1079px) {
+    .PhoneDiv img {
+        height: 110%;
+    }
+}
+
+
 @media only screen and (min-width: 1080px) {
     .phoneBlockDescription {
         position: absolute;
@@ -181,6 +188,12 @@
 
 .lastFeatureBlock {
     margin-bottom: 100px;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1079px) {
+    .phoneLeaveDiv img {
+        height: 120%;
+    }
 }
 
 @media only screen and (min-width: 1080px) {

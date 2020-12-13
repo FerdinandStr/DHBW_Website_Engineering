@@ -6,7 +6,6 @@ import { AiFillPhone } from 'react-icons/ai'
 export default function Kontakt() {
 
     return <div className='defaultPageContainer kontaktPageContainer'>
-        {/* <h1>Wir sind für Sie da</h1> */}
         <h1 className='BlockHeader'>Wir sind für Sie da</h1>
         <div className='IconContainerKontakt'>
             <div className='KontaktBlock'>

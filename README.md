@@ -1,29 +1,21 @@
-# New Project
+# CoGo Projekt
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+Um das ganze hier von 0 auf 100 zum fliegen zu bekommen müssen folgende Dinge vorhanden sein:
+->node.js
 
-## Available Scripts
+dann können mit folgendem Befehl alle Abhängigkeiten installiert werden
+(folgende Befehle müssen im Projekt root Ordner ausgeführt werden, also hier...)
+npm install
 
-### npm start
+danach stehen folgende Scripte (siehe package.json) zur verfügung
+=>npm run start (Startet den Entwicklungsserver und baut die Webpage lokal)
+=>npm run build (Baut eine Produktive Snowpack distibution (inaktiv!))
+=>npm run wp (Baut die webpack JS Datei, die am ende auf dem Webserver zusammen mit allen Dateien im public Ordner landet)
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+die Finale Ordnerstruktur nach "npm run wp" muss wiefolgt aussehen
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+=> ORDNER_AUF_WEBSERVER
+   inhalt = alle Dateien aus public
+    => unterordner "dist"
+       inhalt = alle Dateien aus dist
 
-### npm test
-
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
-
-### npm run build
-
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
-
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/pikapkg/snowpack/tree/master/plugins/plugin-webpack) to your `snowpack.config.js` config file.
-
-### Q: What about Eject?
-
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.

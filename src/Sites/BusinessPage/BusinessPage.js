@@ -4,12 +4,11 @@ import './BusinessPageStyle.css'
 
 export default function BusinessPage() {
 
-
     return <div className='defaultPageContainer bpc'>
         <div className='businessBlock'>
             <img className='busIcons busCogoLogo' src='./CogoLogo.svg' />
             <div className='businessTextContainer'>
-                <h2>Nutzen sie CoGo!</h2>
+                <h2>Nutzen Sie CoGo!</h2>
                 <p>Corona trifft uns alle sehr hart. Besonders allerdings kleinere Unternehmen, wie z.B. Restaurants und Bars. Wir haben uns das Ziel gesetzt, diese schwierigen Umstände für die Gastronomie zu erleichtern. Sämtliche Vorgaben der Regierung, bezüglich Datenerfassung zur Kontaktverfolgung, übernehmen wir mit unserer App. Dabei müssen Ihre Kunden lediglich einen QR-Code scannen, denen wir Ihnen bereitstellen.</p>
             </div>
         </div>
@@ -35,7 +34,7 @@ export default function BusinessPage() {
             <img className='busIcons flexAlignRight' src='./iconSupport.webp' />
             <div className='businessTextContainer flexAlignLeft'>
                 <h2>Kundenservice</h2>
-                <p>Wir bieten für Sie einen 24/7 Kundenservice, der Ihnen alle Fragen rund um unsere App beantworten kann. Ganz gleich, ob Sie ein Besucher einer Bar oder Restaurantbesitzer sind, wir können auf jeden Fall weiterhelfen. <Link to='/Kontakt'>Kontaktieren</Link> sie uns gerne unter 07321/86903 oder schreiben Sie uns ihre Fragen einfach per E-Mail (<a href='mailto:support@cogo.de'>support@cogo.de</a>)!</p>
+                <p>Wir bieten für Sie einen 24/7 Kundenservice, der Ihnen alle Fragen rund um unsere App beantworten kann. Ganz gleich, ob Sie ein Besucher einer Bar oder Restaurantbesitzer sind, wir können auf jeden Fall weiterhelfen. <Link to='/Kontakt'>Kontaktieren</Link> Sie uns gerne unter 07321/86903 oder schreiben Sie uns ihre Fragen einfach per E-Mail (<a href='mailto:support@cogo.de'>support@cogo.de</a>)!</p>
             </div>
         </div>
 
@@ -43,11 +42,10 @@ export default function BusinessPage() {
             <img className='busIcons' src='./iconAngebot.webp' />
             <div className='businessTextContainer'>
                 <h2>Unser Preis</h2>
-                <p>Durch unsere Vollautomatische Software können wir unsere Preise sehr gering halten und verlangen nur Provision von 0,01 €/Kunde.
+                <p>Durch unsere Vollautomatische Software können wir unsere Preise sehr gering halten und verlangen nur eine Provision von 0,01 €/Kunde.
                     Durch den geringen Preis möchten wir vor allem Sie in den schwierigen Zeiten unterstützen.</p>
-                <p>Falls sie an unserem Angebot interessiert sind, <Link to='/Kontakt'>kontaktieren</Link> sie uns gerne. </p>
+                <p>Falls Sie an unserem Angebot interessiert sind, <Link to='/Kontakt'>kontaktieren</Link> Sie uns gerne. </p>
             </div>
         </div>
-
     </div >
 }
