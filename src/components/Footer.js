@@ -9,6 +9,14 @@ export default function Footer() {
         {/* <div className='footerHead'><span>COGO</span></div> */}
         <div className='footerContentDiv'>
             <div className='FooterFlexChild'>
+                <h3 className='Textdata' >Navigation</h3>
+                <Link to="/home">Startseite</Link>
+                <Link to="/business">Business</Link>
+                <Link to="/FAQ">FAQ</Link>
+                <Link to="/kontakt">Kontakt</Link>
+                <Link to="/impressum">Impressum</Link>
+            </div>
+            <div className='FooterFlexChild'>
                 <h3 className='Textdata' >Aktuelle Informationen</h3>
                 <div className='links'>
                     <a href='https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4'>Aktuelle Fallzahlen des RKI</a>

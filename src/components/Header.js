@@ -7,8 +7,8 @@ export default function Header({ isHeaderSolid }) {
         <menu className='headerMenu'>
             <li className='headerLinkText' id='link1'><Link to='/home' >Home</Link></li>
             <li className='headerLinkText' id='link2'><Link to='/business' >Business</Link></li>
-            <li className='headerLinkText' id='link3'><Link to='/FAQ' >FAQ </Link></li>
-            <li className='headerLinkText' id='link4'><Link to='/Kontakt' >Kontakt</Link></li>
+            <li className='headerLinkText' id='link3'><Link to='/faq' >FAQ </Link></li>
+            <li className='headerLinkText' id='link4'><Link to='/kontakt' >Kontakt</Link></li>
             {
                 isHeaderSolid
                     ? null

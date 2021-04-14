@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { cmsURL } from '../../helper/restService'
 import './BusinessPageStyle.css'
 
+
+
 export default function BusinessPage() {
+    //1 cmsURL
+    //2 /api
 
     return <div className='defaultPageContainer bpc'>
         <div className='businessBlock'>
