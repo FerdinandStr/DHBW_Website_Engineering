@@ -8,9 +8,9 @@ export default function FAQ() {
     const [faqs, setFaqs] = useState()
 
     useEffect((() => {
-        getCMS("faqs")
+        getCMS('/faqs')
             .then((data) => setFaqs(data))
-            .catch((data) => console.log("ERROR", data))
+            .catch((data) => console.log('ERROR', data))
     }), [])
 
     return <div className='defaultPageContainer faqPage'>

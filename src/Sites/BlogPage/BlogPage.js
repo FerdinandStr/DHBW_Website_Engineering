@@ -3,12 +3,12 @@ import { useEffect, useState } from "react"
 import React from 'react'
 import { getCMS } from "../../helper/restService"
 
-export default function helloWorld(counter) {
+export default function BusinessPage(counter) {
 
     const [blogs, setBlogs] = useState()
 
     useEffect((() => {
-        getCMS("/faqs")
+        getCMS("/faqs") // Hier neuen Pfad eintragen
             .then((data) => setBlogs(data))
             .catch((data) => console.log("ERROR", data))
     }), [])
