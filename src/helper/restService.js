@@ -1,7 +1,7 @@
-import axios from "axios"
+import axios from 'axios'
 
-const baseURL = "https://wwi20-11.projekt.dhbw-heidenheim.de"
-export const cmsURL = baseURL + "/api"
+const baseURL = 'https://wwi20-11.projekt.dhbw-heidenheim.de'
+export const cmsURL = baseURL + '/api'
 
 export function getCMS(apiPath, options) {
 
@@ -22,6 +22,27 @@ export function getCMS(apiPath, options) {
     )
 }
 
+export function postCMS(apiPath, json, options) {
+    return new Promise((resolve, reject) => {
+        axios.post(cmsURL + apiPath, json)
+            .then((resp) => {
+                logger(resp)
+
+                resolve(resp)
+            })
+            .catch(resp => {
+                logger(resp)
+
+                reject('ERROR!!!!!')
+            })
+    })
+}
+
+export function getCMSImgage(imgPath, options) {
+
+    return cmsURL + imgPath
+}
+
 function logger(resp) {
-    console.log("LOGGER:", resp)
+    console.log('LOGGER:', resp)
 }

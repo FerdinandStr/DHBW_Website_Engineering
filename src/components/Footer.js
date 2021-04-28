@@ -10,11 +10,11 @@ export default function Footer() {
         <div className='footerContentDiv'>
             <div className='FooterFlexChild'>
                 <h3 className='Textdata' >Navigation</h3>
-                <Link to="/home">Startseite</Link>
-                <Link to="/business">Business</Link>
-                <Link to="/FAQ">FAQ</Link>
-                <Link to="/kontakt">Kontakt</Link>
-                <Link to="/impressum">Impressum</Link>
+                <Link to='/home'>Startseite</Link>
+                <Link to='/business'>Business</Link>
+                <Link to='/FAQ'>FAQ</Link>
+                <Link to='/kontakt'>Kontakt</Link>
+                <Link to='/impressum'>Impressum</Link>
             </div>
             <div className='FooterFlexChild'>
                 <h3 className='Textdata' >Aktuelle Informationen</h3>
@@ -47,6 +47,6 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-        <div className='bottomFooterBar'>&copy;2020 Ferdinand Straß, Lenny Floruß, Timo Oswald, Manfred Meier &#124; <Link to='/Impressum'>Impressum</Link> &#124; <Link to='/Kontakt'>Kontakt</Link></div>
+        <div className='bottomFooterBar'>&copy;2021 Ferdinand Straß, Lenny Floruß, Timo Oswald, Manfred Meier &#124; <Link to='/Impressum'>Impressum</Link> &#124; <Link to='/Kontakt'>Kontakt</Link></div>
     </footer >
 }

@@ -1,0 +1,13 @@
+.blogContainer {
+    max-width: 500px;
+    max-height: 500px;
+    border: solid slateblue 2px;
+}
+
+.blogImg {
+    width: 100%;
+}
+
+.blogContainer * {
+    border: solid slateblue 1px;
+}

@@ -33,7 +33,7 @@
 
 .headerLinkText {
     transition: all .15s;
-    padding: 10px 30px 0;
+    padding: 10px 20px 0;
     font-size: 1.6em;
     z-index: 10;
 }
