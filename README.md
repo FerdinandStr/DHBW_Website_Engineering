@@ -19,3 +19,4 @@ die Finale Ordnerstruktur nach "npm run wp" muss wiefolgt aussehen
     => unterordner "dist"
        inhalt = alle Dateien aus dist
 
+(∩｀-´)⊃━☆ﾟ.*･｡ﾟ
