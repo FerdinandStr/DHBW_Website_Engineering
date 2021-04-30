@@ -16,20 +16,24 @@ export default function BlogLandingPage() {
 
 
     const blogList = blogs
-        ? blogs.map(blog =>
+        ? blogs.map((blog, i) => {
 
-            <div key={blog.id} className='landingPage_blogContainer'>
+            console.log(i % 2)
+
+            return <div key={blog.id} className={i % 2 == 0 ? 'landingPage_blogContainer' : 'landingPage_blogContainer lp_bcLeft'}>
                 <Link to={'/blog/' + blog.id}><h2 className='landingPage_blogTitle'>{blog.title_de}</h2></Link>
-                <h3 className='landingPage_blogSubtitle'>{blog.subtitle_de}</h3>
                 <div className='landingPage_blogContent'><p>{shortenContent(blog.content_de)}</p></div>
-                <div className='landingPage_blogImg'><img src={getCMSImgage(blog.title_img.url)} /></div>
-            </div >)
+                <div className='landingPage_blogImg'>{blog.title_img ? <img src={getCMSImgage(blog.title_img.url)} /> : null} </div>
+                <div className='landingPage_blogLink'><Link to={'/blog/' + blog.id}><p>Erfahren sie mehr hier ...</p></Link></div>
+            </div >
+        })
+
         : []
 
 
     return <>
         <h1 className='BlockHeader'>Alle News rund um CoGo</h1>
-        {blogList}
+        <div className='mainParent'>{blogList}</div>
     </>
 }
 

@@ -8,7 +8,7 @@
     box-sizing: border-box;
     border-radius: 4px;
 
-    max-height: 500px;
+    max-height: 800px;
     width: 100%;
     display: auto;
     flex-direction: column;
@@ -33,7 +33,7 @@
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 
-    max-height: 500px;
+    max-height: 800px;
 }
 
 #ClosedContent {

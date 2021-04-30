@@ -29,9 +29,10 @@ label {
 .content {
     background: white;
     padding: 10px 25px;
-    /* border: 1px solid #A7A7A7; */
-    /* box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.35); */
     border-radius: 4px;
+}
+
+.content p {
     font-size: 1.1em;
     text-align: left;
 }

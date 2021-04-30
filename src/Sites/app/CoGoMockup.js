@@ -30,9 +30,9 @@ export default function CoGoMockup() {
                 personList.map((el, i) =>
                     <div className='PersonCard' key={i}>
                         {!isLoggedIn ? <AiOutlineCloseSquare className='cogoCloseIcon' onClick={() => onClose(i)} /> : null}
-                        <p className='cogoLabel'>Name: </p><input className='cogoInput' value={el["name"]} onChange={(e) => onChangeValue("name", e.target.value, i)}></input>
-                        <p className='cogoLabel'>Adresse: </p><input className='cogoInput' value={el["adress"]} onChange={(e) => onChangeValue("adress", e.target.value, i)}></input>
-                        <p className='cogoLabel'>E-Mail: </p><input className='cogoInput' value={el["mail"]} onChange={(e) => onChangeValue("mail", e.target.value, i)}></input>
+                        <p className='cogoLabel'>Name: </p><input className='cogoInput' value={el['name']} onChange={(e) => onChangeValue('name', e.target.value, i)}></input>
+                        <p className='cogoLabel'>Adresse: </p><input className='cogoInput' value={el['adress']} onChange={(e) => onChangeValue('adress', e.target.value, i)}></input>
+                        <p className='cogoLabel'>E-Mail: </p><input className='cogoInput' value={el['mail']} onChange={(e) => onChangeValue('mail', e.target.value, i)}></input>
                     </div>
                 )
             }
@@ -54,19 +54,20 @@ export default function CoGoMockup() {
             : null}
 
 
-        <Link className='cogoInfoLink' to="/datenschutz"><AiOutlineQuestionCircle twoToneColor='#eb2f96' /> Datenschutz</Link>
-        <Link className='cogoInfoLink' to="/FAQ"><AiOutlineQuestionCircle /> FAQ</Link>
+        <Link className='cogoInfoLink' to='/datenschutz'><AiOutlineQuestionCircle twoToneColor='#eb2f96' /> Datenschutz</Link>
+        <Link className='cogoInfoLink' to='/FAQ'><AiOutlineQuestionCircle /> FAQ</Link>
 
-        {!isLoggedIn
-            ? <button className='cogoButton startButton' onClick={() => {
-                setTimeStamp(new Date())
-                setIsLoggedIn(true)
-            }}>Eintragen</button>
+        <div className='cogoApp_ButtonContainer'>
+            {!isLoggedIn
+                ? <button className='cogoButton startButton' onClick={() => {
+                    setTimeStamp(new Date())
+                    setIsLoggedIn(true)
+                }}>Eintragen</button>
 
-            : <button className='cogoButton stopButton' onClick={() => {
-                setTimeStamp(null)
-                setIsLoggedIn(false)
-            }}> Verlassen</button>}
-
+                : <button className='cogoButton stopButton' onClick={() => {
+                    setTimeStamp(null)
+                    setIsLoggedIn(false)
+                }}> Verlassen</button>}
+        </div>
     </div >
 }
