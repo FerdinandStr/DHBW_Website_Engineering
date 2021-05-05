@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { getCMS, getCMSImgage, postCMS } from '../../../helper/restService'
-import TextareaAutosize from 'react-textarea-autosize'
+import { getCMS, getCMSImgage } from '../../../helper/restService'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
 import './SingleBlogPageStyle.css'
 import ReactMarkdown from 'react-markdown'

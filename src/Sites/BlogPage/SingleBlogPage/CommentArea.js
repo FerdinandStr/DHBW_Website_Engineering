@@ -62,7 +62,7 @@ export default function CommentArea(props) {
                             date.setTime(date.getTime() + (60 * 1000))
                             const expiry = '; expires=' + date.toUTCString()
                             document.cookie = 'commentTimeout=true' + expiry + '; path=/'
-
+                            setCommentTimeout(true)
                             updateComments()
                         })
 

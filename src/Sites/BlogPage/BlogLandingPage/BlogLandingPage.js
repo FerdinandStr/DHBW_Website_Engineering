@@ -10,7 +10,7 @@ export default function BlogLandingPage() {
 
     useEffect((() => {
         getCMS('/blogs')
-            .then((data) => setBlogs(data))
+            .then((data) => setBlogs(data.reverse()))
             .catch((data) => console.log('ERROR', data))
     }), [])
 
@@ -21,10 +21,10 @@ export default function BlogLandingPage() {
             console.log(i % 2)
 
             return <div key={blog.id} className={i % 2 == 0 ? 'landingPage_blogContainer' : 'landingPage_blogContainer lp_bcLeft'}>
-                <Link to={'/blog/' + blog.id}><h2 className='landingPage_blogTitle'>{blog.title_de}</h2></Link>
-                <div className='landingPage_blogContent'><p>{shortenContent(blog.content_de)}</p></div>
+                <div className='landingPage_blogTitle'><Link to={'/blog/' + blog.id}><h2>{blog.title_de}</h2></Link></div>
                 <div className='landingPage_blogImg'>{blog.title_img ? <img src={getCMSImgage(blog.title_img.url)} /> : null} </div>
-                <div className='landingPage_blogLink'><Link to={'/blog/' + blog.id}><p>Erfahren sie mehr hier ...</p></Link></div>
+                <div className='landingPage_blogContent'><p>{shortenContent(blog.content_de)}</p></div>
+                <div className='landingPage_blogLink'><Link to={'/blog/' + blog.id}><p>Erfahren sie mehr hier</p></Link></div>
             </div >
         })
 

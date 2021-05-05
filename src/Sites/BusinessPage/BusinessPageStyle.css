@@ -16,6 +16,10 @@
     font-size: 1.2em;
 }
 
+.businessTextContainer a {
+    color: #E1A700;
+}
+
 .busIcons {
     width: 200px;
     margin: 0 50px;
