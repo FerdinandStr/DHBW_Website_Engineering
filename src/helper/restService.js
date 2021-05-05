@@ -4,7 +4,7 @@ const baseURL = 'https://wwi20-11.projekt.dhbw-heidenheim.de'
 export const cmsURL = baseURL + '/api'
 
 export function getCMS(apiPath, options) {
-    const { withLocale } = options
+    const { withLocale } = options ? options : {}
 
     let getUrl = cmsURL + apiPath
 
