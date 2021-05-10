@@ -8,7 +8,7 @@ export default function FAQ() {
     const [faqs, setFaqs] = useState()
 
     useEffect((() => {
-        getCMS('/faqs')
+        getCMS('/faqs', { withLocale: true })
             .then((data) => setFaqs(data))
             .catch((data) => console.log('ERROR', data))
     }), [])
@@ -17,7 +17,7 @@ export default function FAQ() {
         <h1 className='BlockHeader'>Häufig gestellte Fragen</h1>
         {faqs
             ? faqs.map(faq =>
-                <GenericFoldingContainer headlineComponent={<h2>{faq.title_de}</h2>}>
+                <GenericFoldingContainer key={faq.id} headlineComponent={<h2>{faq.title_de}</h2>}>
                     <div className='content'>
                         <p>{faq.content_de}</p>
                     </div>

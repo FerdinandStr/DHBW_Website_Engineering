@@ -9,16 +9,14 @@ export default function BlogLandingPage() {
     const [blogs, setBlogs] = useState()
 
     useEffect((() => {
-        getCMS('/blogs')
-            .then((data) => setBlogs(data.reverse()))
+        getCMS('/blogs', { withLocale: true })
+            .then((data) => setBlogs(data.sort((a, b) => { return new Date(b.release_date) - new Date(a.release_date) })))
             .catch((data) => console.log('ERROR', data))
     }), [])
 
 
     const blogList = blogs
         ? blogs.map((blog, i) => {
-
-            console.log(i % 2)
 
             return <div key={blog.id} className={i % 2 == 0 ? 'landingPage_blogContainer' : 'landingPage_blogContainer lp_bcLeft'}>
                 <div className='landingPage_blogTitle'><Link to={'/blog/' + blog.id}><h2>{blog.title_de}</h2></Link></div>
@@ -38,10 +36,6 @@ export default function BlogLandingPage() {
 }
 
 function shortenContent(text) {
-
     const shortText = text.split(' ').filter((el, i) => i < 50 ? el : false).join(' ') + ' ... '
-
-    console.log(shortText)
-
     return shortText
 }

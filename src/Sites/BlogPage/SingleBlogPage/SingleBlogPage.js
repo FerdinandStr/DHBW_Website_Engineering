@@ -14,7 +14,7 @@ export default function SingleBlogPage() {
     const [comments, setComments] = useState([])
 
     useEffect(() => {
-        getCMS('/blogs/' + blogId)
+        getCMS('/blogs/' + blogId, { withLocale: true })
             .then(resp => {
                 setBlogData(resp)
                 setComments(resp.comments.reverse())
