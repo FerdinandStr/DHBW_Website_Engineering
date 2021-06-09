@@ -1,56 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Kontakt.css'
-import { AiFillHome } from 'react-icons/ai'
-import { AiFillClockCircle } from 'react-icons/ai'
-import { AiFillPhone } from 'react-icons/ai'
+import { AiFillHome, AiFillClockCircle, AiFillPhone } from 'react-icons/ai'
+const reactIcons = { AiFillHome, AiFillClockCircle, AiFillPhone }
+import { cmsURL, getCMS } from '../helper/restService'
+import ReactMarkdown from 'react-markdown'
+
 export default function Kontakt() {
 
-    return <div className='defaultPageContainer kontaktPageContainer'>
-        <h1 className='BlockHeader'>Wir sind für Sie da</h1>
-        <div className='IconContainerKontakt'>
-            <div className='KontaktBlock'>
-                <AiFillHome size={100} />
-                <h3> Adresse:</h3>
-                <p>CoGo GmbH<br />Marienstraße 20 <br />89518 Heidenheim </p>
-            </div>
-            <div className='KontaktBlock'>
-                <AiFillClockCircle size={100} />
-                <h3>Geschäftszeiten:</h3>
-                <p>Montag - Sonntag (8:00 - 24:00 Uhr) <br></br>An Feiertagen (0:00 - 24:00 Uhr)</p>
+    const [kontaktData, setKontaktData] = useState()
+    useEffect((() => {
+        getCMS('/kontakt')
+            .then((data) => setKontaktData(data))
+            .catch((data) => console.log('ERROR', data))
+    }), [])
 
-            </div>
-            <div className='KontaktBlock'>
-                <AiFillPhone size={100} />
-                <h3>Support erreichbar unter:</h3>
-                <p> 07321/86903 <br /><a href='mailto:support@cogo.de'>support@cogo.de</a></p>
-            </div>
+    return <div className='defaultPageContainer kontaktPageContainer'>
+        <h1 className='BlockHeader'>{kontaktData ? kontaktData.Header1 : null}</h1>
+        <div className='IconContainerKontakt'>
+            {
+                kontaktData
+                    ? kontaktData.InfoBlock.map(infoContent => {
+                        //ICON NEEDS TO BE ADDED MANUALLY TO LIST//
+                        const Icon = reactIcons[infoContent.reactIconID]
+
+                        return <div className='KontaktBlock' key={infoContent.id}>
+                            <Icon size={100} />
+                            <h3>{infoContent.header}</h3>
+                            <ReactMarkdown>{infoContent.content}</ReactMarkdown>
+                        </div>
+                    })
+                    : null
+            }
         </div>
-        <h1 className='BlockHeader'>Unser Team</h1>
+        <h1 className='BlockHeader'>{kontaktData ? kontaktData.HeaderTeam : null}</h1>
         <div className='BitmojiContainerKontakt'>
-            <div className='BitmojiIconcontainer'>
-                <img className='rund' src='./BitManni.webp' />
-                <h4>Manfred M.</h4>
-                <h5>CEO</h5>
-                <p>"There is always a lighthouse, there's always a man, there's always a city."</p>
-            </div>
-            <div className='BitmojiIconcontainer'>
-                <img className='rund' src='./BitFerd.webp' />
-                <h4>Ferdinand S.</h4>
-                <h5>CTO</h5>
-                <p>"Nothing happend here ...."</p>
-            </div>
-            <div className='BitmojiIconcontainer'>
-                <img className='rund' src='./BitTimo.webp' />
-                <h4>Timo O.</h4>
-                <h5>COO</h5>
-                <p> !!!#+#1!*05***11D5</p>
-            </div>
-            <div className='BitmojiIconcontainer'>
-                <img className='rund' src='./BitLenny.webp' />
-                <h4>Lenny F.</h4>
-                <h5>CMO</h5>
-                <p>"Wo war Gondor ?"</p>
-            </div>
+            {
+                kontaktData
+                    ? kontaktData.PersonBlock.map(personContent =>
+                        <div className='BitmojiIconcontainer' key={personContent.id}>
+                            <img loading='lazy' className='rund' src={personContent.image ? cmsURL + personContent.image.url : null} />
+                            <h4>{personContent.name}</h4>
+                            <h5>{personContent.title}</h5>
+                            <p>{personContent.slogan}</p>
+                        </div>
+                    )
+                    : null
+            }
         </div>
-    </div>
+    </div >
 }

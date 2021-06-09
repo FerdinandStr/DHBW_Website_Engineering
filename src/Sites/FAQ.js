@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import GenericFoldingContainer from '../components/FoldingContainer/GenericFoldingContainer'
 import { getCMS } from '../helper/restService'
 import './FAQ.css'
+import ReactMarkdown from 'react-markdown'
 
 export default function FAQ() {
 
@@ -19,7 +20,7 @@ export default function FAQ() {
             ? faqs.map(faq =>
                 <GenericFoldingContainer key={faq.id} headlineComponent={<h2>{faq.title_de}</h2>}>
                     <div className='content'>
-                        <p>{faq.content_de}</p>
+                        <ReactMarkdown>{faq.content_de}</ReactMarkdown>
                     </div>
                 </GenericFoldingContainer>
             )

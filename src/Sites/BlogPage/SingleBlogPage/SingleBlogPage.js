@@ -30,7 +30,7 @@ export default function SingleBlogPage() {
         {blogData
             ? <div>
                 <h2>{blogData.title_de}</h2>
-                {blogData.banner_img ? <img className='blogBannerImg' src={getCMSImgage(blogData.banner_img.url)} /> : null}
+                {blogData.banner_img ? <img loading='lazy' className='blogBannerImg' src={getCMSImgage(blogData.banner_img.url)} /> : null}
                 <h3>{blogData.subtitle_de}</h3>
                 <ReactMarkdown>{blogData.content_de}</ReactMarkdown>
             </div>

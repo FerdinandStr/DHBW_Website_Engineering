@@ -19,7 +19,7 @@
     .landingPage_blogContainer {
         display: grid;
         grid-template-columns: auto auto;
-        grid-template-areas: "header image""content image""link image";
+        grid-template-areas: "header image""subtitle image""content image""link image";
         row-gap: 15px;
         column-gap: 25px;
     }
@@ -30,12 +30,11 @@
 }
 
 .lp_bcLeft {
-    grid-template-areas: "image header""image content""image link";
+    grid-template-areas: "image header""image subtitle""image content""image link";
 }
 
 .landingPage_blogContainer h2 {
     font-size: 2em;
-    text-align: center;
 }
 
 .landingPage_blogContainer p {
@@ -44,10 +43,12 @@
 
 .landingPage_blogTitle {
     grid-area: header;
+    text-align: center;
 }
 
 .landingPage_blogSubtitle {
     grid-area: subtitle;
+    text-align: center;
 }
 
 .landingPage_blogImg {

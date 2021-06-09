@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { getCMS } from '../../helper/restService'
 import { cmsURL } from '../../helper/restService'
 import './BusinessPageStyle.css'
 import ReactMarkdown from 'react-markdown'
 
-
 export default function BusinessPage() {
 
     const [businessCards, setbusinessCards] = useState()
-
     useEffect((() => {
         getCMS('/business-cards', { withLocale: true })
             .then((data) => setbusinessCards(data))
@@ -17,20 +14,14 @@ export default function BusinessPage() {
     }), [])
 
     return <div className='defaultPageContainer bpc'>
-        {businessCards
-            ? businessCards.map((businessCard, counter) =>
-
-                <div key={businessCard.id} className='businessBlock'>
-                    {businessCard.img ? <img className={(counter == 0 ? 'busIcons busCogoLogo' : counter % 2 == 0 ? 'busIcons' : 'busIcons flexAlignRight')} src={cmsURL + businessCard.img.url} /> : null}
-                    <div className='businessTextContainer'>
-                        <h2>{businessCard.title}</h2>
-                        <ReactMarkdown>{businessCard.content}</ReactMarkdown>
-                    </div>
+        {businessCards ? businessCards.map((businessCard, i) =>
+            <div key={businessCard.id} className='businessBlock'>
+                <img loading='lazy' className={'busIcons ' + (i == 0 ? 'busCogoLogo' : i % 2 != 0 ? 'flexAlignRight' : null)} src={businessCard.img ? cmsURL + businessCard.img.url : null} />
+                <div className='businessTextContainer'>
+                    <h2>{businessCard.title}</h2>
+                    <ReactMarkdown>{businessCard.content}</ReactMarkdown>
                 </div>
-            )
-            : null
-        }
+            </div>
+        ) : null}
     </div>
-
-
 }
