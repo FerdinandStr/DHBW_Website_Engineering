@@ -56,13 +56,13 @@
     width: 100%;
     max-width: 500px;
     max-height: 500px;
-    border-radius: 2%;
-    -webkit-border-radius: 2%;
-    -moz-border-radius: 2%;
 }
 
 .landingPage_blogImg>img {
     width: 100%;
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
 }
 
 .landingPage_blogContent {
