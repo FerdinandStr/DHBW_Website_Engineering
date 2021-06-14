@@ -23,7 +23,7 @@ export default function BlogLandingPage() {
                 <div className='landingPage_blogSubtitle'><Link to={'/blog/' + blog.id}><h3>{blog.subtitle_de}</h3></Link></div>
                 <div className='landingPage_blogImg'>{blog.title_img ? <img loading='lazy' src={getCMSImgage(blog.title_img.url)} /> : null} </div>
                 <div className='landingPage_blogContent'><p>{shortenContent(blog.content_de)}</p></div>
-                <div className='landingPage_blogLink'><Link to={'/blog/' + blog.id}><p>Erfahren sie mehr hier</p></Link></div>
+                <div className='landingPage_blogLink'><Link to={'/blog/' + blog.id}><p>Erfahren sie hier mehr</p></Link></div>
             </div >
         })
 
